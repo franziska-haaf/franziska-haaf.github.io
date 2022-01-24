@@ -1,0 +1,309 @@
+<html lang="english">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="author" content="Franziska Haaf">
+    <title>Metal plates</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/project.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="javascripts/methods.js"></script>
+</head>
+
+<body>
+<nav class="label-large">
+    <span id="topNav" class="nav-closed">
+        <a href="/">Start</a>
+        <a href="/resume.html">Resume</a>
+        <a href="/tonic.html">TONIC.</a>
+        <a href="/healthapp.html">Healthapp</a>
+        <a href="/metalplates.html" class="active">Metal plates</a>
+        <a href="/tonic-designsystem.html">TONIC. Design system</a>
+    </span>
+    <a href="javascript:void(0);" class="mobile-menu-icon" onclick="toggleMobileNav()">
+        <span id="topNavMobileToggle" class="material-icons">menu</span>
+    </a>
+</nav>
+
+<div id="onPageNavigation">
+    <ul>
+        <li class="label-small">Contents</li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#conception">Conception</a></li>
+        <li><a href="#testing">Testing</a></li>
+    </ul>
+</div>
+
+<div id="backToTopButton" class="hidden">
+    <span class="material-icons icon-button" onclick="location.href='#'">arrow_upward</span>
+</div>
+
+<div class="teaser-image">
+    <img src="images/metalplates/metal-plate-leds.jpg" alt="View of the metal plates LED"/>
+</div>
+<section class="project-block project-header">
+    <div class="limited-width">
+        <section>
+            <h1>Metal plates</h1>
+            <p class="body-large quote">An ambient interface for connecting people at meetups.</p>
+        </section>
+        <section>
+            <h2>Problem</h2>
+            <p>Information that inform about a location are normally located directly at the place and conspicuous for a
+                greater audience. We want to research solutions that are also embedded at the target location, but offer
+                themselves only to people who might be interested in it. Unobtrusive and attention-aware systems might
+                provide a potential solution to this. We want to explore what (multimodal) modalitites work best for
+                such systems. As a target location, we frame the topic in meetup situations in which a mixed group of
+                people with similar interest, but varying backgrounds comes together at one location.
+            </p>
+        </section>
+    </div>
+</section>
+
+<div class="project-meta-list colored-bg">
+    <div class="project-meta">
+        <h3>Mission</h3>
+        <p>Lorem ipsum</p>
+    </div>
+    <div class="project-meta">
+        <h3>Role</h3>
+        <p>Master's student at the LMU in collaboration with <span class="secondary-text">Netlight</span></p>
+    </div>
+    <div class="project-meta">
+        <h3>Timeline</h3>
+        <p>November 2019 - June 2020</p>
+    </div>
+    <div class="project-meta">
+        <h3>Methods</h3>
+        <p>RtD | observations | spatial analysis | workshops | expert interviews | personas | user flows | (rapid)
+            prototyping | guerrilla testing | qualitative user testing</p>
+    </div>
+    <div class="project-meta">
+        <h3>Tools</h3>
+        <p>Arduino | Electronics | Adobe Illustrator | Laser Cutter | 3D printer</p>
+    </div>
+</div>
+
+<section class="project-block">
+    <div class="limited-width">
+        <h2>About the Metal Plates</h2>
+        <p>The prototype was developed in the context of my master thesis with the topic 'Examine the use of
+            unobtrusive, interactive interfaces in a semi-public meetup situation'. The goal of the thesis was to
+            explore the use of unobtrusive, interactive interfaces in semi-public meetup situations. The work was done
+            with the research-through-design approach using iterative prototyping. A pair of interactive floor plates
+            was iteratively
+            created, offering a game for people interested in it.</p>
+        <p>The floor plates can be categorized as an ambient interface.</p>
+    </div>
+</section>
+
+<section class="project-block colored-bg" id="research">
+    <div class="limited-width">
+        <section>
+            <h2>Research</h2>
+            <p>The situation 'person does not integrate' was selected on the basis of a situation room analysis and
+                a creative workshop using the lotus flower method.</p>
+            <p></p>
+        </section>
+        <section>
+            <h3>Description of the rooms</h3>
+            <p>Three spaces were evaluated. Netlight's previous Meetup event space, Netlight's future Meetup event space
+                currently under renovation, and AWS (Amazon Web Services) event space in the Munich office.</p>
+            <p>There are sitting areas in all rooms that enable visitors to retreat. The spaces have kitchen areas that
+                provided drinks and food. The majority of visitors spent their time standing in the area of the kitchen.
+                For talks that took place during the rest of the Meetup, chairs facing the projection area were
+                available to the visitors.</p>
+        </section>
+        <section class="row-container">
+            <div class="row-70"><p>The former Meetup space of the company Netlight. This is where the following Meetup
+                observations took place.</p>
+                <p>The lounge chairs located in front of the projection were partially replaced with chairs facing the
+                    projection.</p>
+            </div>
+            <div class="row-30">
+                <img src="images/metalplates/metalplates-meetup-netlight-old.png" alt="A room plan"
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </div>
+        </section>
+        <section>
+            <section class="row-container">
+                <div class="row-70"><img src="images/metalplates/metalplates-meetup-netlight-new.png" alt="A room plan"
+                                         onclick="toggleModal(this)" class="has-modal"/></div>
+                <div class="row-30"><img src="images/metalplates/metalplates-meetup-netlight-possible-position.png"
+                                         alt="A room plan"
+                                         onclick="toggleModal(this)" class="has-modal"/></div>
+            </section>
+            <section class="row-container">
+                <div class="row-70"><p>Room plan of the future Meetup space in the Netlight offices, which is still
+                    being
+                    renovated at the time the research is carried out. The tables marked in red will probably be
+                    replaced by
+                    rows of chairs facing the stage for Meetups.</p></div>
+                <div class="row-30"><p>Extract from left plan. The sofa area seems most
+                    suitable for the position of the metal plates (marked with 1 and 2).</p></div>
+            </section>
+        </section>
+        <section class="row-container">
+            <div class="row-50">
+                <p>The space for getting to know each other and arrival phase in the offices of the company Amazon Web
+                    Services.</p>
+            </div>
+            <div class="row-50">
+                <img src="images/metalplates/metalplates-meetup-aws.png"
+                     alt="A room plan"
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </div>
+        </section>
+        <section>
+            <section>
+                <h3>Meetup observations</h3>
+                <p>A total of 4 Qualitative Observations were conducted in the Meetup spaces described.
+                    The aim is to identify and select a specific situation on the basis of which iterative prototypical
+                    approaches for unobtrusive interactive interfaces in Meetup situations are tested.
+
+                    It could be observed that the crowd at the Meetups is spread out in the room. Seating, foosball, and
+                    food areas are all used. Conversation groups form, and at Meetups hosted by Netlight, single people
+                    are
+                    approached by hosts and initiated into conversation (with other people).
+                    In contrast, at the AWS Meetup, some participating individuals who were supposedly alone engage in
+                    themselves, as no organizers jumped into the role of " matchmakers." These isolated individuals sat
+                    on
+                    armchairs or sofas away from the hustle and bustle, eating and drinking. A more frequently observed
+                    behavior was how isolated participants looked around, searching for a familiar face, strolling
+                    between
+                    the discussion groups, only to be again on their own at other quieter spots. This gave the
+                    impression of
+                    introverted personalities who felt uncomfortable placing themselves in the center of the activity or
+                    seeking direct contact with strangers. These participants could very well be picked up and engaged
+                    with
+                    the space, especially in quieter areas such as seating areas, and ideally brought into contact with
+                    other people.</p>
+            </section>
+            <section>
+                <img src="images/metalplates/metalplates-example-meetups.jpg"
+                     alt="A photo showing people at a podem discussion at a meetup."
+                     onclick="toggleModal(this)" class="has-modal"/>
+                <p class="secondary-text">Photo from an actual Meetup. In this case, an event hosted by CodePub in
+                    Munich, which is geared
+                    towards women in tech. The Meetup took place in the old Meetup space of Netlight. Here, the chairs
+                    in front of the projection screen were replaced by rows of chairs for a panel discussion.</p>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h3>Lotus Flower Method</h3>
+                <p class="secondary-text">The 'Lotus Flower Method', or 'Lotus Blossom Technique', is a creative method
+                    designed for groups and
+                    is used to deepen different solutions to a defined situation (for example, a problem or an idea).
+                    The method can be executed with small sticky notes. </p>
+                <p class="secondary-text">In this process, a situation is placed as the center of a 3x3 matrix of sticky
+                    notes to generate
+                    ideas for a solution approach. The surrounding sticky notes are still blank. These sticky notes are
+                    now filled by the group with ideas on how to approach the situation. Subsequently, the (selected)
+                    ideas generated
+                    are placed in their own 3x3 matrices as a center point and again the empty slips of paper around
+                    them
+                    are filled with ideas. This process can now be repeated again if necessary.</p>
+                <p>The Lotus Flower method was conducted at Netlight with seven participants, including people with UX
+                    backgrounds and people who plan and/or deliver events.</p>
+                <p>Since it was noticeable in the previous Meetup observations that there were visitors who did not
+                    actively participate in the social events of the Meetup, the situation was defined here as 'person
+                    does not integrate'. The method was used to find solutions to the problem of how to resolve this
+                    situation with the help of unobtrusive interactive interfaces.</p>
+                <p>The most interesting, and therefore most thoroughly considered by the method, were the ideas 'Laser
+                    pointer', 'Quiz' and 'Dance Dance Revolution with light fields on the floor'.</p>
+            </section>
+            <section>
+                <img src="images/metalplates/metal-plates-lotus-flower-method.jpg"
+                     alt="Postits with text showing the output of the workshop."
+                     onclick="toggleModal(this)" class="has-modal"/>
+                <p class="secondary-text">The result at the end of the workshop.</p>
+            </section>
+            <section>
+                <p>In the course of the workshop, participants also debated the situation "person does not integrate",
+                    which was specified for the workshop. The participants were not asked to do this. In doing so, the
+                    recruiters participating in the workshop informed about the situation that they regularly put people
+                    in contact with each other at Meetups and thus integrate them through outside intervention. This
+                    further confirmed the situation assumed by the Meetup observations.</p>
+            </section>
+        </section>
+    </div>
+</section>
+
+
+<section class="project-block" id="conception">
+    <div class="limited-width">
+        <section>
+            <h2>Conception</h2>
+        </section>
+        <section>
+            <h3>Inspiration</h3>
+            <p>In the Lotus Flower Method workshop, the idea was compared to "Dance Dance Revolution." This is a dance
+                game, which is operated with plates on the floor which show arrows in different directions. These arrows
+                must then be activated with the plates when shown on the connected display. Another comparison that came
+                up was the German children's TV show 'Tabaluga TV' where there is a memory task with ice floes on the
+                floor that light up.</p>
+            <img src="images/metalplates/metal-plates-floor-plates-ideas.png"
+                 alt="Postits with text showing the output of the workshop."
+                 onclick="toggleModal(this)" class="has-modal"/>
+        </section>
+        <section>
+            <section>
+                <section>
+                    <h3>Persona</h3>
+                    <p>Based on the observations and feedback from the organizers, two personas were developed. For the
+                        prototype, the second persona 'Kumar Rani' is particularly relevant and is considered the target
+                        group.</p>
+                </section>
+                <section>
+                    <img src="images/metalplates/metalplates-personas.png"
+                         alt="Postits with text showing the output of the workshop."
+                         onclick="toggleModal(this)" class="has-modal"/>
+                </section>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h3>First Prototype</h3>
+                <p>Lorem</p>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h3>Second Prototype</h3>
+                <p>Lorem</p>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h3>Third Prototype</h3>
+                <p>Lorem</p>
+            </section>
+        </section>
+    </div>
+</section>
+
+<section class="project-block" id="testing">
+    <div class="limited-width">
+        <section>
+            <h2>Testing</h2>
+        </section>
+        <section>
+            <h3>Lorem ipsum</h3>
+            <p>Dolor sit amet</p>
+        </section>
+    </div>
+</section>
+
+<div id="imgModal" class="closed">
+    <span class="material-icons icon-button" onclick="toggleModal()">close</span>
+    <img src="" alt="" class="full-padding"/>
+</div>
+
+<footer class="label-large">
+    <a href="https://www.linkedin.com/in/franziska-haaf/" target="_blank">LinkedIn</a>
+    <a href="https://www.xing.com/profile/Franziska_Haaf2" target="_blank">Xing</a>
+</footer>
+</body>
+
+</html>

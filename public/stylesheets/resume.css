@@ -1,0 +1,43 @@
+body > section{
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+section{
+    text-align: justify;
+}
+
+section section ~ section{
+    margin-top: 24px;
+}
+
+.portrait{
+    margin-top: 0;
+}
+
+.portrait img{
+    border-radius: 400px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+    body > section{
+        padding: 16px;
+    }
+
+    body section:first-of-type{
+        margin-top: 0;
+    }
+}
+
+/* Desktop & Tablet */
+@media print, screen and (min-width: 768px) {
+    body > section{
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+    #resume .row-50{
+        width: 45%;
+    }
+}

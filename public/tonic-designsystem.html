@@ -1,0 +1,244 @@
+<html lang="english">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="author" content="Franziska Haaf">
+    <title>Healthapp</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/project.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="javascripts/methods.js"></script>
+</head>
+
+<body>
+<nav class="label-large">
+    <span id="topNav" class="nav-closed">
+        <a href="/">Start</a>
+        <a href="/resume.html">Resume</a>
+        <a href="/tonic.html">TONIC.</a>
+        <a href="/healthapp.html">Healthapp</a>
+        <a href="/metalplates.html">Metal plates</a>
+        <a href="/tonic-designsystem.html" class="active">TONIC. Design system</a>
+    </span>
+    <a href="javascript:void(0);" class="mobile-menu-icon" onclick="toggleMobileNav()">
+        <span id="topNavMobileToggle" class="material-icons">menu</span>
+    </a>
+</nav>
+
+<div id="backToTopButton" class="hidden">
+    <span class="material-icons icon-button" onclick="location.href='#'">arrow_upward</span>
+</div>
+
+<div class="teaser-image">
+    <img src="images/designsystem/design-system-components.png" alt="Design systems screenshot of the components"/>
+</div>
+<section class="project-block project-header">
+    <div class="limited-width">
+        <section>
+            <h1>TONIC. Design System</h1>
+            <p class="body-large quote">A design system for the product 'TONIC. for advertisers' based on Material
+                design.</p>
+        </section>
+        <section>
+            <h2>About</h2>
+            <p>The company Team Internet has various products. These products have different target groups and are
+                partly based on different technologies. Future revisions or new interfaces should be based on Material
+                Design. For this purpose, a central design system, the TI-design-system, was
+                created in Figma, including
+                a style guide, which contains all the important components. The product-specific design systems then
+                inherit from this and overwrite adjustments specific to the products. In addition, the product-specific
+                design systems contain individual components that do not apply company-wide.</p>
+        </section>
+    </div>
+</section>
+
+<section class="project-block">
+    <div class="limited-width row-container">
+        <div class="row-50">
+            <h2>Structure</h2>
+            <p>Each Team Internet product has its own project in Figma. The design systems also have their own project.
+                This includes the company-wide Team Internet Design System (+ style guide) and a separate design system
+                for each product.</p>
+            <p>Design files in the products then import the TI-design-system and the respective product design system.
+                Importing the TI-design-system is necessary because not all components are revised in the product design
+                systems.</p>
+        </div>
+        <div class="row-50">
+            <img src="images/designsystem/design-system-figma-structure.png"
+                 alt="Flow diagram showing the figma structure"
+                 onclick="toggleModal(this)" class="has-modal"/>
+        </div>
+    </div>
+</section>
+
+<section class="project-block">
+    <div class="limited-width row-container">
+        <div class="row-30">
+            <img src="images/designsystem/design-system-styleguide.png"
+                 alt="Screenshot of the styleguide"
+                 onclick="toggleModal(this)" class="has-modal"/>
+            <p class="secondary-text">Beginning of the company wide style guide.</p>
+        </div>
+        <div class="row-70">
+            <h2>Styleguide: a living document</h2>
+            <p>For the beginning of the style guide, the most important information from the Material documentation was
+                summarised and added. The style guide was created as a living document to determine what should be
+                included in the style guide in <span class="quote">iterative cooperation with the DEVs</span> of the
+                various products. In the
+                process, information requested by the DEVs, unknown concepts or necessary information are gradually
+                added. Examples of styled components are always added as well as links to documentation (such as
+                Material or Vuetify).</p>
+        </div>
+    </div>
+</section>
+
+<section class="project-block">
+    <div class="limited-width row-container">
+        <section class="row-50">
+            <h2>Colors</h2>
+            <p>Most of the products have existing colours. These were used but very reduced and simplified, as the
+                colours were created for graphic design but are not so extensively needed in material.
+                Colours were defined for both <span class="quote">light and dark mode.</span></p>
+        </section>
+        <section class="row-50">
+            <div>
+                <img src="images/designsystem/design-system-colors-ti.png"
+                     alt="Colors of the company wide design system"
+                     onclick="toggleModal(this)" class="has-modal"/>
+                <p class="secondary-text">The TI-Designsystem colors for light and dark mode.</p>
+            </div>
+            <div>
+                <img src="images/designsystem/design-system-colors-adtonic.png"
+                     alt="Colors of the AdTONIC. design sytem"
+                     onclick="toggleModal(this)" class="has-modal"/>
+                <p class="secondary-text">The TONIC-Designsystem colors for light and dark mode.</p>
+            </div>
+        </section>
+    </div>
+</section>
+
+<section class="project-block">
+    <div class="limited-width row-container">
+        <div class="row-50">
+            <img src="images/designsystem/design-system-fonts.png"
+                 alt="Fonts of the company wide design system"
+                 onclick="toggleModal(this)" class="has-modal"/>
+        </div>
+        <div class="row-50">
+            <h2>Fonts</h2>
+            <p>The fonts for the products also existed through previous graphic design. For TONIC, the font (Work Sans)
+                of the existing website was used for short text parts such as headlines. The font structure from
+                material 3 was used because it is more comprehensible than material 2 and defines more clearly what font
+                is used for.</span></p>
+        </div>
+    </div>
+</section>
+
+<section class="project-block colored-bg">
+    <div class="limited-width">
+        <section>
+            <h2>Components</h2>
+            <p>The TI-design-system contains the original components such as buttons, text fields, dialogues, switches,
+                etc. The product-specific components in the respective design systems then 'inherit' from the TI
+                components by <span class="quote">wrapping</span> them in new components and overwriting styles such as
+                fonts and colours.
+                Components with <span class="quote">variants</span> are used to map all variants of a component. <span
+                        class="quote">Autolayout</span> is used as far a s
+                possible and useful.</p>
+        </section>
+        <section class="row-container">
+            <div class="row-50">
+                <p>A TONIC. textfield which <span class="quote">encapsulates</span> the original TI-textfield with the
+                    appropriate variant. In this
+                    case, the font and colours were overwritten.</p>
+            </div>
+            <div class="row-50 image">
+                <img src="images/designsystem/design-system-textinput.png" alt="Screenshot of a text input"
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </div>
+        </section>
+        <section class="row-container">
+            <div class="row-50">
+                <p>Due to a new Figma update, components can now also contain <span class="quote">prototype</span>
+                    information and pass it on to
+                    the copies. This has been incorporated where it makes sense.</p>
+            </div>
+            <div class="row-50 image">
+                <img src="images/designsystem/design-system-component-prototype.png"
+                     alt="Screenshot of a text input component with prototyping"
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </div>
+        </section>
+        <section class="row-container">
+            <div class="row-50">
+                <p>Information in the <span class="quote">component names</span> such as [product name] should help to
+                    clearly identify components
+                    in the asset search.</p>
+            </div>
+            <div class="row-50 image">
+                <img src="images/designsystem/design-system-naming.png"
+                     alt="Good naming of components makes them easier to search for"
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </div>
+        </section>
+        <section class="row-container">
+            <div class="row-50">
+                <p>All components have <span class="quote">descriptions</span> that contain important information for
+                    the DEVs and a link to the
+                    style guide or directly to the Material documentation.</p>
+            </div>
+            <div class="row-50 image">
+                <img src="images/designsystem/design-system-descriptions.png"
+                     alt="Descriptions for components"
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </div>
+        </section>
+        <section class="row-container">
+            <div class="row-30">
+                <p>The containers of the different icon variants (outlined vs. rounded) have been given different
+                    background colours - which are not visible when importing the respective icons - in order to
+                    <span class="quote">immediately recognise</span> which icon is needed. Here I have deliberately
+                    decided not to use individual
+                    components with variants for the icons in order to enable a clear search and selection of the
+                    icons.</p>
+            </div>
+            <div class="row-30 image">
+                <img src="images/designsystem/design-system-component-bg.png"
+                     alt="Different background colors for similar components"
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </div>
+            <div class="row-30 image">
+                <img src="images/designsystem/design-system-component-bg-search.png"
+                     alt="Screenshot of an active search showing icons for the search word 'favorite'."
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </div>
+        </section>
+        <section class="row-container">
+            <div class="row-50">
+                <p>TONIC. has very dark, saturated colours. I therefore used <span class="quote">rounded buttons</span>
+                    to reduce the harshness and
+                    create a modern look. To better distinguish the chips from the buttons, more <span class="quote">angular chips</span>
+                    were used for TONIC. as presented in material 3.</p>
+            </div>
+            <div class="row-50 image">
+                <img src="images/designsystem/design-system-button-chip.png"
+                     alt="A rounded button and an angular chip in comparison"
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </div>
+        </section>
+    </div>
+</section>
+
+
+<div id="imgModal" class="closed">
+    <span class="material-icons icon-button" onclick="toggleModal()">close</span>
+    <img src="" alt="" class="full-padding"/>
+</div>
+
+<footer class="label-large">
+    <a href="https://www.linkedin.com/in/franziska-haaf/" target="_blank">LinkedIn</a>
+    <a href="https://www.xing.com/profile/Franziska_Haaf2" target="_blank">Xing</a>
+</footer>
+</body>
+
+</html>
