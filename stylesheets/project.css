@@ -1,0 +1,111 @@
+.project-block.project-header {
+    margin-top: 0;
+}
+
+.project-block.project-header div section:first-child{
+    text-align: center;
+}
+
+.project-header .quote {
+    background-color: #017afe;
+}
+
+.project-block {
+    margin-top: 48px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.project-block p {
+    text-align: justify;
+}
+
+.project-meta {
+    padding: 16px;
+}
+
+.image img{
+    width: 100%;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+    .project-content section ~ section {
+        margin-top: 24px;
+    }
+
+    .teaser-image {
+        display: none;
+    }
+
+    .project-block {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .project-block section ~ section {
+        margin-top: 24px;
+    }
+
+    .research-finding-label {
+        padding: 8px;
+        margin-bottom: 4px;
+        background-color: rgba(1, 122, 254, 1);
+    }
+}
+
+/* Desktop & Tablet */
+@media only screen and (min-width: 768px) {
+    .project-block section ~ section {
+        margin-top: 24px;
+    }
+
+    .research-finding {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .research-finding :nth-child(2) {
+        margin-top: 0;
+        width: 80%;
+    }
+
+    .research-finding .quote{
+        margin-top: 8px;
+        display: inline-block;
+        width: auto;
+    }
+
+    .research-finding-label {
+        width: 18%;
+        min-height: 160px;
+        height: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(1, 122, 254, .2);
+    }
+
+    .teaser-image {
+        height: 30%;
+        overflow: hidden;
+    }
+
+    .project-meta-list {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 24px 0;
+    }
+
+    .project-meta {
+        width: 19%;
+        padding: 24px;
+    }
+
+    .project-meta-list h3 {
+        margin-bottom: 16px;
+    }
+}

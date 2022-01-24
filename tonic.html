@@ -1,0 +1,485 @@
+<html lang="english">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="author" content="Franziska Haaf">
+    <title>TONIC. for advertisers</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/project.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="javascripts/methods.js"></script>
+</head>
+
+<body>
+<nav class="label-large">
+    <span id="topNav" class="nav-closed">
+        <a href="/">Start</a>
+        <a href="/resume.html">Resume</a>
+        <a href="/tonic.html" class="active">TONIC.</a>
+        <a href="/healthapp.html">Healthapp</a>
+        <a href="/metalplates.html">Metal plates</a>
+        <a href="/tonic-designsystem.html">TONIC. Design system</a>
+    </span>
+    <a href="javascript:void(0);" class="mobile-menu-icon" onclick="toggleMobileNav()">
+        <span id="topNavMobileToggle" class="material-icons">menu</span>
+    </a>
+</nav>
+
+<div id="onPageNavigation">
+    <ul>
+        <li class="label-small">Contents</li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#researchFindings">Research findings</a></li>
+        <li><a href="#conception">Conception</a></li>
+        <li><a href="#testing">Testing</a></li>
+    </ul>
+</div>
+
+<div id="backToTopButton" class="hidden">
+    <span class="material-icons icon-button" onclick="location.href='#'">arrow_upward</span>
+</div>
+
+<div class="teaser-image">
+    <img src="images/adtonic/tonic-teaser.png" alt="High fidelity designs for TONIC."/>
+</div>
+<section class="project-block project-header">
+    <div class="limited-width">
+        <section>
+            <h1>TONIC.</h1>
+            <p class="body-large quote">A real time bidding platform to buy highly converting advertising traffic.</p>
+        </section>
+        <section>
+            <h2>Problem</h2>
+            <p>TONIC. is full of partly known usability problems, unfriendly for beginners and with an outdated design.
+                The
+                product was originally built with a tech focus and never designed with the user in mind.</p>
+        </section>
+    </div>
+</section>
+
+<div class="project-meta-list colored-bg">
+    <div class="project-meta">
+        <h3>Mission</h3>
+        <p>Build a modern, competitive product that is oriented towards the user and supports them in their rapid,
+            real-time critical work process in the best possible way.</p>
+    </div>
+    <div class="project-meta">
+        <h3>Role</h3>
+        <p>Senior UX Designer as an integrated part of the cross-functional Scrum team</p>
+    </div>
+    <div class="project-meta">
+        <h3>Timeline</h3>
+        <p>July 2021 - December 2021</p>
+    </div>
+    <div class="project-meta">
+        <h3>Methods</h3>
+        <p>Interviews | Personas | Web analysis | Card sorting | User Journey Map | Wireframes | Prototyping | Designs |
+            Collaborative sketching | Heuristic evaluation | Usability testing</p>
+    </div>
+    <div class="project-meta">
+        <h3>Tools</h3>
+        <p>Figma | Adobe AfterEffects | Dropbox Paper | Jira | Confluence | Blender | Zoom | Procreate</p>
+    </div>
+</div>
+
+<section class="project-block">
+    <div class="limited-width">
+        <section>
+            <h2>About TONIC.</h2>
+            <p>TONIC. is formally called 'TONIC. for Advertisers'. It is a platform that enables the purchase of the
+                advertising types 'POP' and 'Domain Redirect traffic'. In the future, a third option will also be
+                offered which includes preconfigured ads of the advertising types 'Search', 'Native' and
+                'Social'. POP, as the name suggests, is advertising in the form of pop-ups. Domain redirect traffic
+                comes from landing pages that are displayed on parked domains.</p>
+            <p>TONIC. provides two interfaces: one for 'normal' users - the internal advertisers - and since recently
+                one for feed advertisers (which are maintaining their campaigns via API but set up certain things from a
+                small extra UI). In this context, we are talking about the user interface for the majority of the user
+                group - the internal advertisers.</p>
+            <p>Users buy the existing traffic (POP and redirect) by creating and maintaining so-called 'campaigns'.
+                Through the campaigns, you set the general conditions, for example, that you only want to buy clicks
+                that fall under the area 'food' and come from mobile devices between 6 pm and 12 am because you want to
+                sell pizza. The new ad type will offer preconfigured ads which will be purchasable via the
+                so-called Marketplace in form of 'marketplace-offers'.</p>
+        </section>
+        <section>
+            <div>
+                <img src="images/adtonic/what-is-domain-traffic.png"
+                     alt="A comic scribble explaining domain redirect traffic" onclick="toggleModal(this)"
+                     class="has-modal"/>
+            </div>
+            <p class="secondary-text">A scribble for a comic idea to visually explain to our users what 'domain
+                redirect' traffic is.</p>
+        </section>
+    </div>
+</section>
+
+<section class="project-block colored-bg" id="research">
+    <div class="limited-width">
+        <section>
+            <h2>Research</h2>
+            <p>As no research was ever conducted and an online questionnaire via newsletter remained largely unanswered,
+                the
+                users and their needs, wishes and problems are not really known. The account managers who are in contact
+                with users know the biggest pain points, but no possibilities to address them.</p>
+        </section>
+        <section>
+            <h3>Web analytics</h3>
+            <p>We implemented "Matomo" for our current (and future) UIs for tracking user data in a way that is
+                non-personal and data privacy compliant. Matomo gives us the opportunity to examine our site statistics
+                in great detail. Which pages are visited for how long, with which end device, from which country, etc.
+                Matomo has proven to be particularly valuable for analysing which currently implemented TONIC. Features
+                are not used at all or rarely.</p>
+        </section>
+        <section>
+            <h3>Qualitative interviews with sales</h3>
+            <p>I started with qualitative interviews of our TONIC. sales people who are responsible for the users in
+                form of account management and help desk. I wanted to learn how TONIC. does work, how users create and
+                maintain campaigns and what their needs and problems are.</p>
+        </section>
+        <section class="row-container">
+            <div class="row-70"><h3>Qualitative interviews with users</h3>
+                <p>I conducted user interviews with experienced users via Zoom. In doing so, I had developers from the
+                    team
+                    with me to take notes so that they also got in touch with the users. I used a series of guiding
+                    questions and had the users show me - via sharing their screen - how they work with TONIC. and where
+                    it
+                    is in their daily workflow. 
+                    This revealed that they generally do not spend much time on the TONIC website. For some users, for
+                    instance, they only login a few times a week. This is mainly due to the fact that the majority of
+                    users
+                    also use other (competing) products and the data of all products is fed into a combined tracking
+                    tool
+                    via API. When users log into TONIC, they do so to do things that their tracking tool does not offer
+                    them, such as creating new campaigns or adjusting bids and daily budgets.</p></div>
+            <div class="row-30">
+                <img src="images/adtonic/tonic-user-stories.png" alt="Post-its showing user stories for TONIC."
+                     onclick="toggleModal(this)" class="has-modal"/>
+                <p class="secondary-text">User stories created from the user interviews. Clustered by topics and
+                    rated by frequency of mentioning.</p>
+            </div>
+        </section>
+        <section>
+            <section>
+                <h3>Personas</h3>
+                <p>I conducted a persona workshop with the account managers. The workshop was hold digitally via Miro.
+                    We used templates that included the persona demographics, needs and how these needs are served.
+                    We created 2 personas for Internal users (1 Media Buyer and 1 Affiliate) and 1 feed advertiser.
+                    The personas where verified via the user interviews later on.</p>
+            </section>
+            <section>
+                <img src="images/adtonic/tonic-personas.png" alt="Three persona profiles for TONIC."
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </section>
+        </section>
+    </div>
+</section>
+
+<section class="project-block" id="researchFindings">
+    <div class="limited-width">
+        <section>
+            <h2>Research findings</h2>
+            <p>Besides asking why people use TONIC., what their goal is, how they work and where they know TONIC. from,
+                we collected what they like, what they don't like and possibilities for improvement.</p>
+        </section>
+        <section class="research-finding">
+            <div class="research-finding-label label-large full-padding">How users work</div>
+            <div>
+                <ul>
+                    <li>None of the interviewed users used TONIC.s internal tracking tool.</li>
+                    <li>When publishing a campaign they start broad.</li>
+                    <li>Features like source bidding or black-/and whitelisting are only used after the success of the
+                        campaign has been observed for a little while.
+                    </li>
+                    <li>Users want to run 2 exactly identically configured campaigns with mobile and desktop in parallel
+                        in
+                        comparison
+                    </li>
+                    <li>Naming conventions for campaigns.</li>
+                    <li>Daily budget without spreading to watch how fast the budget is spent.</li>
+                    <li>Visit TONIC. almost exclusively for creating and/or modifying campaigns</li>
+                </ul>
+            </div>
+        </section>
+        <section class="research-finding">
+            <div class="research-finding-label label-large full-padding">Bad bid suggestion</div>
+            <div>
+                <p>Users have complained that the bid suggestion does not work well. Users either increase the suggested
+                    bid
+                    or orientate themselves on the bid of existing, similar campaigns.</p>
+                <p class="quote">"It would make my life easier if the suggested bid would work."</p>
+            </div>
+        </section>
+        <section class="research-finding">
+            <div class="research-finding-label label-large full-padding">Nontransparent source tracking</div>
+            <div>
+                <ul>
+                    <li>Source-IDs are hashes that represent the website from which a redirected user comes.</li>
+                    <li>Only the general bid for the entire campaign is included in the tracking link, but not
+                        individually
+                        set
+                        source ID bids. To solve this, some users create completely new campaigns just for individual
+                        source
+                        IDs
+                        in order to better track the bids.
+                    </li>
+                    <li>The list of set individual source ID bids can only be viewed in the edit view of a campaign or
+                        through tab
+                        navigation in the detailed view of a campaign.
+                    </li>
+                </ul>
+                <p class="quote">"Source-ID tracking is a regular challenge. It's very laborious and gives me a
+                    headache."</p>
+            </div>
+        </section>
+        <section class="research-finding">
+            <div class="research-finding-label label-large full-padding">Daily uniques</div>
+            <div>
+                <ul>
+                    <li>The daily uniques indicate the expected uniquer visitors per day for the campaign with the given
+                        configuration.
+                    </li>
+                    <li>The daily uniques are "an important information when creating a campaign" but are only listed on
+                        page
+                        two of the campaign creation.
+                    </li>
+                    <li>The daily uniques are very inaccurate and usually do not prove true. This makes them unsuitable
+                        for a
+                        trustworthy forecast.
+                    </li>
+                </ul>
+                <p class="quote">"The daily uniques are not reality."</p>
+            </div>
+        </section>
+        <section class="research-finding">
+            <div class="research-finding-label label-large full-padding">Bad folder feature</div>
+            <div>
+                <ul>
+                    <li>The feature to organise multiple campaigns in a common folder is not known and not used.</li>
+                    <li>It is poorly implemented and not understandable to users.</li>
+                    <li>The feature was not actively requested by the users and therefore does not seem to have a great
+                        need
+                        among the users.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="research-finding">
+            <div class="research-finding-label label-large full-padding">Choosing keywords is hard</div>
+            <div>
+                <ul>
+                    <li>Users ask their account manager for advice on which keywords work best.</li>
+                    <li>Keywords are added via a free text field which offers no input help.</li>
+                    <li>A 'Keyword Finder', which can be used on demand, offers a search field via which suitable
+                        suggestions for
+                        existing keywords are offered for selection.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="research-finding">
+            <div class="research-finding-label label-large full-padding">Open questions</div>
+            <div>
+                Some questions arose that need deeper research:
+                <ul>
+                    <li>The feature 'traffic estimator' has nearly no usage. Do we need this feature? Can we improve
+                        it?
+                    </li>
+                    <li>Is the 'tablet' function next to 'mobile' and 'desktop' necessary?</li>
+                    <li>Do people use the dashboard-tabs?</li>
+                    <li>FAQ usage by people that have no account manager</li>
+                    <li>Reports function not broadly used. Opportunity for improvement?</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</section>
+
+<section class="project-block colored-bg" id="conception">
+    <div class="limited-width">
+        <section>
+            <h2>Conception</h2>
+        </section>
+        <section class="row-container">
+            <div class="row-70">
+                <h3>Card sorting</h3>
+                <p>As the existing campaign creation process is complicated and not very user-friendly, yet our most
+                    important part of the product, I conducted a card sorting workshop with the TONIC.team. I wanted to
+                    rethink the campaign creation process. This workshop also led to a discussion on whether we needed
+                    all the objects and functions (blacklisting, whitelisting and source ID bidding) in the campaign
+                    creation process at all. I then analysed this in the user interviews.</p>
+            </div>
+            <div class="row-30">
+                <img src="images/adtonic/tonic-card-sorting.png" alt="Output from the card sorting workshop."
+                     onclick="toggleModal(this)" class="has-modal"/>
+                <p class="secondary-text">Output from the card sorting workshop.</p>
+            </div>
+        </section>
+        <section class="row-container">
+            <div class="row-30">
+                <img src="images/adtonic/tonic-user-journey-map.jpg" alt="A user journey map on a whiteboard"
+                     onclick="toggleModal(this)" class="has-modal"/>
+                <p class="secondary-text">First version of the user journey map, created in the workshop</p>
+            </div>
+            <div class="row-70">
+                <h3>User journey map</h3>
+                <p>Also with the TONIC. team I conducted a in office user journey map workshop. I digitalised the output
+                    and the user journey map got introduced to the account manager after the session for validation and
+                    second input. The user journey specially made clear that we have to look closer on the new user
+                    onboarding in the future. The journey was later adapted according to the user interviews and more
+                    details were
+                    added.</p>
+            </div>
+        </section>
+        <section>
+            <section>
+                <h3>Wireframes & Designs</h3>
+                <p>Iteratively (starting with wireframes), I created high fidelity designs that were validated through
+                    cognitive walkthroughs and design critiques.
+                    Our focus is on the desktop view as only 6% of our users access TONIC via a mobile device. User
+                    research
+                    has also confirmed our assumption that the need of our users to use TONIC. mobile is almost
+                    non-existent. Nevertheless, we want to make the mobile experience as good as possible and therefore
+                    offer Responsive Design.</p>
+            </section>
+            <section>
+                <img src="images/adtonic/tonic-wireframes.png" alt="Wireframes"
+                     onclick="toggleModal(this)" class="has-modal"/>
+                <p class="secondary-text">A selection of the wireframes for TONIC.</p>
+            </section>
+            <section>
+                <img src="images/adtonic/tonic-designs.png" alt="High fidelity designs"
+                     onclick="toggleModal(this)" class="has-modal"/>
+                <p class="secondary-text">A selection of the high fidelity designs for TONIC. The focus is on the
+                    desktop view as only 6% of our users access TONIC via a mobile device. Nevertheless, we want to make
+                    the mobile experience as good as possible and therefore offer Responsive Design.</p>
+            </section>
+        </section>
+        <section class="row-container">
+            <div class="row-50">
+                <h3>Click-prototype</h3>
+                <p>I created a click prototype with the designs. In doing so, I represented the most important processes
+                    - account creation, campaign creation, campaign detail view, campaign editing, etc. I also created
+                    alternative versions for comparison where relevant. 
+                    Details such as hover effects and animations through GIFs were also implemented to create as real an
+                    experience as possible.
+                    The prototype was later used in the user tests.</p>
+            </div>
+            <div class="row-50">
+                <img src="images/adtonic/tonic-clickprototype-tonic.png" alt="Click prototype connections in Figma"
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </div>
+        </section>
+        <section class="row-container">
+            <div class="row-80">
+                <h3>Collaborative sketching workshop</h3>
+                <p>In addition to the new design for the existing product, an important feature is the implementation of
+                    a new ad type. I conducted a 'crazy 8' collaborative sketching workshop in which the scrum team,
+                    sales and stakeholders participated. In this, the first design ideas for the display of the
+                    inventory for the new ad type as well as the offer for individual offers were created. It turned out
+                    that the best way for the new ad type would be to completely decouple it from the existing ad types
+                    and therefore from the necessary campaign creation. The idea and the first designs for the TONIC.
+                    Marketplace and its Marketplace offers were born.</p>
+            </div>
+            <div class="row-20">
+                <img src="images/adtonic/tonic-marketplace.png" alt="3D icon of a marketplace"
+                     onclick="toggleModal(this)" class="has-modal"/>
+                <p class="secondary-text">I created 3D icons in blender like this one for the marketplace.</p>
+            </div>
+        </section>
+        <section class="row-container">
+            <div class="row-30">
+                <img src="images/adtonic/tonic-crazy-8-scribbles.jpg" alt="Design scribbles of UIs"
+                     onclick="toggleModal(this)" class="has-modal"/>
+                <p class="secondary-text">Some of the output from the "crazy 8's" collaborative sketching
+                    workshop.</p>
+            </div>
+            <div class="row-70">
+                <img src="images/adtonic/tonic-crazy-8-collabo-output.jpg"
+                     alt="Design scribble of a UI for the marketplace"
+                     onclick="toggleModal(this)" class="has-modal"/>
+                <p class="secondary-text">In the workshop collaboratively developed UI proposal for the
+                    marketplace</p>
+            </div>
+        </section>
+    </div>
+</section>
+
+<section class="project-block" id="testing">
+    <div class="limited-width">
+        <section>
+            <h2>Testing</h2>
+        </section>
+        <section>
+            <h3>Heuristic evaluation</h3>
+            <p>One of the first things I did when I joined the team was a heuristic evaluation. I used heuristics based
+                on ISO 9241-110 for 10. Most of the problems found could be solved by redesigning the UI, but existing
+                problems, especially bugs, were solved according to their priority.</p>
+        </section>
+        <section>
+            <section>
+                <h3>Usability testing</h3>
+                <p>Usability tests were carried out using the high-fidelity click prototype. The tests took place
+                    remotely
+                    via Zoom. In addition to me as the interviewer, one person took notes in each session. There were
+                    predefined questions and tasks. In conclusion, the interviewees were asked about their subjective
+                    perception of usability using the SUS (System Usability Scale).</p>
+                <p>The designs were very well received for the overall part, smaller feedback such as wording, the wish
+                    for
+                    a warning when leaving the campaign creation or the validation of individual source IDs when
+                    inserting a
+                    large list of source IDs into the blacklist or whitelist were made.</p>
+            </section>
+            <section class="centered-text"><img src="images/adtonic/tonic-sus-auswertung.png"
+                                                alt="Evaluation of the System Usability Scale (SUS) responses from users in a table."
+                                                onclick="toggleModal(this)" class="has-modal"/>
+                <p class="secondary-text">Evaluation of the System Usability Scale responses from users.
+                    Unfortunately, the testing could only be carried out with 4 users, as it is very difficult to find
+                    TONIC users who agreed to participate.</p>
+            </section>
+        </section>
+        <section class="row-container">
+            <section class="row-70">
+                <h3>Guerilla testing: Marketplace</h3>
+                <p>Based on the results of the collaborative sketching workshop for the new ad type, a click prototype
+                    with wireframes was created. It enables the comparison of the two workflows favoured in the
+                    workshop. First, the bidding on individual offers with a 2-column view and second through a popup.
+                    The prototype will be tested in guerrilla tests as a next step.</p>
+            </section>
+            <section class="row-30">
+                <img src="images/adtonic/tonic-clickprototype-marketplace.png"
+                     alt="Click prototype connections in figma for the marketplace wireframes"
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </section>
+        </section>
+    </div>
+</section>
+
+<section class="project-block colored-bg">
+    <div class="limited-width">
+        <section>
+            <h2>The end</h2>
+            <p>
+                Unfortunately, at the end of 2021, we received the news that our product <span class="quote">TONIC. was to be integrated
+                with the competing product of a sister company for reasons of corporate strategy.</span> This happened
+                shortly
+                after the implementation of the first new designs.
+                We had to stop our work and as a team we are very sad because we are convinced that with the redesign of
+                TONIC we were going to provide our users with a new, user-oriented TONIC. that supports them even better
+                in their workflow. TONIC. started under the name of 'DNTX' in 2012.
+            </p>
+        </section>
+    </div>
+</section>
+
+<div id="imgModal" class="closed">
+    <span class="material-icons icon-button" onclick="toggleModal()">close</span>
+    <img src="" alt="" class="full-padding"/>
+</div>
+
+<footer class="label-large">
+    <a href="https://www.linkedin.com/in/franziska-haaf/" target="_blank">LinkedIn</a>
+    <a href="https://www.xing.com/profile/Franziska_Haaf2" target="_blank">Xing</a>
+</footer>
+</body>
+
+</html>
