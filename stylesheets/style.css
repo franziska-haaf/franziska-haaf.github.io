@@ -342,6 +342,10 @@ img.has-modal {
         margin-top: 16px;
     }
 
+    .row-container :first-child{
+        margin-top: 0;
+    }
+
     .row-container {
         display: flex;
         flex-direction: column;
@@ -493,4 +497,8 @@ h3 {
 
 .centered-text {
     text-align: center;
+}
+
+p a{
+    text-decoration: underline;
 }

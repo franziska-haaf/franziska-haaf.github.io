@@ -52,6 +52,17 @@
         margin-bottom: 4px;
         background-color: rgba(1, 122, 254, 1);
     }
+
+    .mobile-card{
+        padding: 16px;
+        border: 1px solid #017afe;
+        border-radius: 24px;
+        margin: 0;
+    }
+
+    .mobile-card ~ .mobile-card{
+        margin-top: 16px;
+    }
 }
 
 /* Desktop & Tablet */
