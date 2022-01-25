@@ -1,0 +1,593 @@
+<html lang="english">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="author" content="Franziska Haaf">
+    <title>Pressure plates</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/project.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="javascripts/methods.js"></script>
+</head>
+
+<body>
+<nav class="label-large">
+    <span id="topNav" class="nav-closed">
+        <a href="/">Start</a>
+        <a href="/resume.html">Resume</a>
+        <a href="/tonic.html">TONIC.</a>
+        <a href="/healthapp.html">Healthapp</a>
+        <a href="/pressureplates.html" class="active">Pressure plates</a>
+        <a href="/tonic-designsystem.html">TONIC. Design system</a>
+    </span>
+    <a href="javascript:void(0);" class="mobile-menu-icon" onclick="toggleMobileNav()">
+        <span id="topNavMobileToggle" class="material-icons">menu</span>
+    </a>
+</nav>
+
+<div id="onPageNavigation">
+    <ul>
+        <li class="label-small">Contents</li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#conception">Conception</a></li>
+        <li><a href="#testing">Testing</a></li>
+        <li><a href="#futurePrototype">Future protoypes</a></li>
+    </ul>
+</div>
+
+<div id="backToTopButton" class="hidden">
+    <span class="material-icons icon-button" onclick="location.href='#'">arrow_upward</span>
+</div>
+
+<div class="teaser-image">
+    <img src="images/pressureplates/pressureplate-teaser.jpg"
+         alt="Comfy chairs with 2 metal plates lying on the floor"/>
+</div>
+<section class="project-block project-header">
+    <div class="limited-width">
+        <section>
+            <h1>Pressure plates</h1>
+            <p class="body-large quote">An ambient interface for connecting people at meetups.</p>
+        </section>
+        <section>
+            <h2>Problem</h2>
+            <p>The social component is an important factor in Meetups. The majority of attendees value networking and
+                want to build and expand social networks (<a href="https://dl.acm.org/doi/10.1145/3377811.3380333"
+                                                             target="_blank">source</a>). But there are
+                people at Meetups who do not actively participate in the social part of the Meetup. It was found that
+                individuals who do not integrate often instead engage on their own and stay somewhat apart from the
+                action, isolating themselves even more from the Meetup situation. These initial, social barriers should
+                be overcome with the help of an interface, thereby bringing users into contact with other people.
+            </p>
+        </section>
+    </div>
+</section>
+
+<div class="project-meta-list colored-bg">
+    <div class="project-meta">
+        <h3>Mission</h3>
+        <p>Connect people who do not actively participate in the social events at Meetups by using an ambient
+            interface.</p>
+    </div>
+    <div class="project-meta">
+        <h3>Role</h3>
+        <p>Master's student at the LMU in collaboration with <span class="secondary-text">Netlight</span></p>
+    </div>
+    <div class="project-meta">
+        <h3>Timeline</h3>
+        <p>November 2019 - June 2020</p>
+    </div>
+    <div class="project-meta">
+        <h3>Methods</h3>
+        <p>RtD | observations | spatial analysis | workshops | expert interviews | personas | user flows | (rapid)
+            prototyping | guerrilla testing | qualitative user testing</p>
+    </div>
+    <div class="project-meta">
+        <h3>Tools</h3>
+        <p>Arduino | Electronics | Adobe Illustrator | Laser Cutter | 3D printer</p>
+    </div>
+</div>
+
+<section class="project-block">
+    <div class="limited-width">
+        <h2>About the Pressure plates</h2>
+        <p>The prototype was developed in the context of my master thesis with the topic 'Examine the use of
+            unobtrusive, interactive interfaces in a semi-public meetup situation'. The goal of the thesis was to
+            explore the use of unobtrusive, interactive interfaces in semi-public meetup situations. The work was done
+            with the research-through-design approach using iterative prototyping. A pair of interactive floor plates
+            was iteratively
+            created, offering a game for people interested in it.</p>
+        <p>The floor plates can be categorized as an ambient interface.</p>
+    </div>
+</section>
+
+<section class="project-block colored-bg" id="research">
+    <div class="limited-width">
+        <section>
+            <h2>Research</h2>
+            <p>The situation 'person does not integrate' was selected on the basis of a situation room analysis and
+                a creative workshop using the lotus flower method.</p>
+            <p></p>
+        </section>
+        <section>
+            <h3>Description of the rooms</h3>
+            <p>Three spaces were evaluated. Netlight's previous Meetup event space, Netlight's future Meetup event space
+                currently under renovation, and AWS (Amazon Web Services) event space in the Munich office.</p>
+            <p>There are sitting areas in all rooms that enable visitors to retreat. The spaces have kitchen areas that
+                provided drinks and food. The majority of visitors spent their time standing in the area of the kitchen.
+                For talks that took place during the rest of the Meetup, chairs facing the projection area were
+                available to the visitors.</p>
+        </section>
+        <section class="row-container mobile-card">
+            <div class="row-70"><p>The <span class="quote">former Meetup space</span> of the company Netlight. This is
+                where the following Meetup
+                observations took place.The lounge chairs located in front of the projection were partially replaced
+                with chairs facing the
+                projection.</p>
+            </div>
+            <div class="row-30">
+                <img src="images/pressureplates/pressureplate-meetup-netlight-old.png" alt="A room plan"
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </div>
+        </section>
+        <section class="row-container mobile-card">
+            <div class="row-70"><p>Room plan of the <span class="quote">future Meetup space</span> in the Netlight
+                offices, which is still
+                being renovated at the time the research is carried out. The tables marked in red will probably be
+                replaced by rows of chairs facing the stage for Meetups.</p>
+            </div>
+            <div class="row-30">
+                <img src="images/pressureplates/pressureplate-meetup-netlight-new.png" alt="A room plan"
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </div>
+        </section>
+        <section class="row-container mobile-card">
+            <div class="row-70"><p>Extract from the plan above. The sofa area seems most
+                suitable for the position of the pressure plates (marked with 1 and 2).</p>
+            </div>
+            <div class="row-30">
+                <img src="images/pressureplates/pressureplate-meetup-netlight-possible-position.png" alt="A room plan"
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </div>
+        </section>
+        <section class="row-container mobile-card">
+            <div class="row-70">
+                <p>The space for getting to know each other and arrival phase in the offices of the company <span
+                        class="quote">Amazon Web
+                    Services Munich</span> office spaces.</p>
+            </div>
+            <div class="row-30">
+                <img src="images/pressureplates/pressureplate-meetup-aws.png"
+                     alt="A room plan"
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </div>
+        </section>
+        <section>
+            <section>
+                <h3>Meetup observations</h3>
+                <p>A total of 4 Qualitative Observations were conducted in the Meetup spaces described.
+                    The aim is to identify and select a specific situation on the basis of which iterative prototypical
+                    approaches for unobtrusive interactive interfaces in Meetup situations are tested.
+                </p>
+                <p>It could be observed that the crowd at the Meetups is spread out in the room. Seating, foosball, and
+                    food areas are all used. Conversation groups form, and at Meetups hosted by Netlight, single people
+                    are
+                    approached by hosts and initiated into conversation (with other people).
+                </p>
+                <p>In contrast, at the AWS Meetup, some participating individuals who were supposedly alone engage in
+                    themselves, as no organizers jumped into the role of 'matchmakers'. These isolated individuals sat
+                    on
+                    armchairs or sofas away from the hustle and bustle, eating and drinking. A more frequently observed
+                    behavior was how isolated participants looked around, searching for a familiar face, strolling
+                    between
+                    the discussion groups, only to be again on their own at other quieter spots. This gave the
+                    impression of
+                    introverted personalities who felt uncomfortable placing themselves in the center of the activity or
+                    seeking direct contact with strangers. <span class="quote">These participants could very well be picked up and engaged
+                    with the space</span> , especially in quieter areas such as seating areas, and ideally brought into
+                    contact with other people.</p>
+            </section>
+            <section>
+                <img src="images/pressureplates/pressureplate-example-meetups.jpg"
+                     alt="A photo showing people at a podem discussion at a meetup."
+                     onclick="toggleModal(this)" class="has-modal"/>
+                <p class="secondary-text">Photo from an actual Meetup. In this case, an event hosted by CodePub in
+                    Munich, which is geared
+                    towards women in tech. The Meetup took place in the old Meetup space of Netlight. Here, the chairs
+                    in front of the projection screen were replaced by rows of chairs for a panel discussion.</p>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h3>Lotus Flower Method</h3>
+                <p class="secondary-text">The 'Lotus Flower Method', or 'Lotus Blossom Technique', is a creative method
+                    designed for groups and
+                    is used to deepen different solutions to a defined situation (for example, a problem or an idea).
+                    The method can be executed with small sticky notes. </p>
+                <p class="secondary-text">In this process, a situation is placed as the center of a 3x3 matrix of sticky
+                    notes to generate
+                    ideas for a solution approach. The surrounding sticky notes are still blank. These sticky notes are
+                    now filled by the group with ideas on how to approach the situation. Subsequently, the (selected)
+                    ideas generated
+                    are placed in their own 3x3 matrices as a center point and again the empty slips of paper around
+                    them
+                    are filled with ideas. This process can now be repeated again if necessary.</p>
+                <p>The Lotus Flower method was conducted at Netlight with seven participants, including people with UX
+                    backgrounds and people who plan and/or host Meetups.</p>
+                <p>Since it was noticeable in the previous Meetup observations that there were visitors who did not
+                    actively participate in the social events of the Meetup, the situation was defined here as 'person
+                    does not integrate'. The method was used to find solutions to the problem of how to resolve this
+                    situation with the help of unobtrusive interactive interfaces.</p>
+                <p>The most interesting, and therefore most thoroughly considered by the method, were the ideas 'Laser
+                    pointer', 'Quiz' and 'Dance Dance Revolution with light fields on the floor'.</p>
+            </section>
+            <section>
+                <img src="images/pressureplates/pressureplate-lotus-flower-method.jpg"
+                     alt="Postits with text showing the output of the workshop."
+                     onclick="toggleModal(this)" class="has-modal"/>
+                <p class="secondary-text">The result at the end of the workshop.</p>
+            </section>
+            <section>
+                <p>In the course of the workshop, participants also debated the situation 'person does not integrate',
+                    which was specified for the workshop. The participants were not asked to do this. In doing so, the
+                    recruiters participating in the workshop informed about the situation that they regularly put people
+                    in contact with each other at Meetups and thus integrate them through outside intervention. This
+                    further confirmed the situation assumed by the Meetup observations.</p>
+            </section>
+        </section>
+    </div>
+</section>
+
+
+<section class="project-block" id="conception">
+    <div class="limited-width">
+        <section>
+            <h2>Conception</h2>
+        </section>
+        <section>
+            <h3>Inspiration</h3>
+            <p>In the Lotus Flower Method workshop, the idea was compared to 'Dance Dance Revolution.' This is a dance
+                game, which is operated with plates on the floor which show arrows in different directions. These arrows
+                must then be activated with the plates when shown on the connected display. Another comparison that came
+                up was the German children's TV show 'Tabaluga TV' where there is a memory task with ice floes on the
+                floor that light up.</p>
+            <img src="images/pressureplates/pressureplate-ideas.png"
+                 alt="Postits with text showing the output of the workshop."
+                 onclick="toggleModal(this)" class="has-modal"/>
+        </section>
+        <section>
+            <section>
+                <section>
+                    <h3>Persona</h3>
+                    <p>Based on the observations and feedback from the organizers, two personas were developed. For the
+                        prototype, the second persona 'Kumar Rani' is particularly relevant and is considered the target
+                        group.</p>
+                </section>
+                <section>
+                    <img src="images/pressureplates/pressureplate-personas.png"
+                         alt="Postits with text showing the output of the workshop."
+                         onclick="toggleModal(this)" class="has-modal"/>
+                </section>
+            </section>
+        </section>
+        <section>
+            <section>
+                <section>
+                    <h3>Prototyping</h3>
+                    <p>The prototype 'pressure plate' was refined over several iterations. The first iteration mainly
+                        tested whether users understood the interaction itself. In the second iteration, the prototype
+                        was revised to appear more stable, provide ambient light, and present an icon to indicate use.
+                        In addition, a duplicate was created to implement the intended use of a game. In the third
+                        iteration, the panels were made of metal and now communicate with each other using the UDP
+                        network protocol to enable the aforementioned game. In the fourth and fifth iterations,
+                        customizations for better affordance, such as icons and a score display of the game state
+                        represented by LEDs, were added.</p>
+                </section>
+                <section>
+                    <h3>First Prototype</h3>
+                    <p class="quote">Two wooden plates were covered with aluminum foil, and a spacer between them
+                        ensured
+                        that the plates only touched when pressure was applied, thus closing the circuit and causing an
+                        LED to light up.</p>
+                    <p>Guerilla Tests revealed that some users were afraid of damaging the Interface.
+                        Since the parts of the electronics were freely visible next to the plate and this seemed to
+                        unsettle the users, the plate was modified in a further step so that the LEDs could be stowed
+                        away in a hole
+                        on the underside of the prototype. With the help of a Plexiglas plate, which was also mounted on
+                        the
+                        underside, an ambient lighting effect was created around the printing plate.
+                    </p>
+                    <p>With regard to the selected Meetup situation and the desired purpose there - bringing
+                        participants
+                        who are not yet integrated closer together socially and communicatively - it was also decided to
+                        create two panels that can communicate with each other. In addition,
+                        a meaningful use case still needs to be found instead of the individual LEDs.</p>
+                </section>
+                <section class="row-container">
+                    <section class="row-70 mobile-card">
+                        <img src="images/pressureplates/pressureplate-fritzing.png"
+                             alt="Diagram of the first iteration"
+                             onclick="toggleModal(this)" class="has-modal"/>
+                        <p class="secondary-text">Diagram showing the setup of the first prototypes first iteration.</p>
+                    </section>
+                    <section class="row-30 mobile-card">
+                        <img src="images/pressureplates/pressureplate-first-prototype-build.jpg"
+                             alt="Diagram of the first iteration"
+                             onclick="toggleModal(this)" class="has-modal"/>
+                        <p class="secondary-text">A light test of a version of the first prototype with ambient
+                            light.</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section>
+            <section>
+                <section>
+                    <h3>Second Prototype</h3>
+                    <p>Based on the results and impressions of the guerrilla tests, the second iteration of the
+                        prototype underwent several adjustments: Two panels in a larger format were produced and the
+                        light was installed on the side to maintain the ambient lighting effect. The parts were made
+                        using a laser cutter and engraved with a light bulb symbol.</p>
+                    <p>ESP8266 microcontrollers were used to enable the boards to communicate via wireless LAN.
+                        A fundamental goal for this iteration of the prototype was to improve affordance - that is, to
+                        find ways to make the plates' modes of interaction easier to understand and to make users less
+                        reluctant to interact with them.</p>
+                </section>
+                <section class="row-container">
+                    <div class="row-30 mobile-card">
+                        <img src="images/pressureplates/pressureplate-second-prototype-building.png"
+                             alt="Diagram of the first iteration"
+                             onclick="toggleModal(this)" class="has-modal"/>
+                        <p class="secondary-text">The building plan of the second prototype. All parts have been
+                            created in Adobe Illustrator and cut with a laser cutter.</p>
+                    </div>
+                    <div class="row-30 mobile-card">
+                        <img src="images/pressureplates/pressureplate-first-prototype-inside.jpeg"
+                             alt="Inside look of the prototype"
+                             onclick="toggleModal(this)" class="has-modal"/>
+                        <p class="secondary-text">The second prototype without the upper plate
+                            that closes the circuit upon interaction. The upper
+                            plate with the icon also has a layer of aluminum on the other side. A foam layer on the edge
+                            maintains a distance between the plates in the rest position.</p>
+                    </div>
+                    <div class="row-30 mobile-card">
+                        <img src="images/pressureplates/pressureplate-first-prototype-interaction.jpg"
+                             alt="Prototype being used."
+                             onclick="toggleModal(this)" class="has-modal"/>
+                        <p class="secondary-text">The microcontroller and
+                            the other electronics are hidden in the little wooden box. Pressure through the foot causes
+                            the color of the outer light strip to change.</p>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h3>Third Prototype</h3>
+                <p>Based on the experience with the second iteration of the prototype, it was decided for the next
+                    iteration to create the plates out of metal. The aim was to make the plates appear more
+                    high-quality, more stable and less susceptible to dirt, thus counteracting inhibitions among users.
+                    The construction plan for this prototype is the same as for the previous iteration.
+                    The intended use is a game in which two users each operate a plate. Thanks to the Wifi-enabled
+                    ESP8266 microcontrollers, the boards can communicate with each other via the UDP protocol in a
+                    shared Wifi network.
+                    The LEDs of both plates display different colors in a random rotation. If both plates show the same
+                    color, the users have to actuate their respective plate as fast as possible. The user who presses
+                    his or her plate faster wins the game. The plates show a light animation for the winner and for the
+                    loser.</p>
+                <p>The plates were again created in a larger format, so that in this iteration people with larger feet
+                    can also press the pressure surface with their whole foot. The microcontrollers are placed at a
+                    greater distance from the plates thanks to longer cables.</p>
+            </section>
+            <section class="row-container">
+                <div class="row-30 mobile-card">
+                    <img src="images/pressureplates/pressureplate-third-prototype-building.png"
+                         alt="Diagram of the third iteration"
+                         onclick="toggleModal(this)" class="has-modal"/>
+                    <p class="secondary-text">Building plan of the third prototype.</p>
+                </div>
+                <div class="row-30 mobile-card">
+                    <img src="images/pressureplates/pressureplate-third-prototype-inside.jpg"
+                         alt="Diagram of the third iteration"
+                         onclick="toggleModal(this)" class="has-modal"/>
+                    <p class="secondary-text">Inside look of the prototype. The white lines are made thin foam to ensure
+                        the separation of the panels.</p>
+                </div>
+                <div class="row-30 mobile-card">
+                    <img src="images/pressureplates/pressureplate-third-prototype-outside.jpeg"
+                         alt="Diagram of the third iteration"
+                         onclick="toggleModal(this)" class="has-modal"/>
+                    <p class="secondary-text">During the user tests the plates were partly equipped with different
+                        icons. The icons were covered with transparent foil, so that they remained exchangeable and
+                        different variants could be tested.</p>
+                </div>
+            </section>
+        </section>
+    </div>
+</section>
+
+<section class="project-block colored-bg" id="testing">
+    <div class="limited-width">
+        <section>
+            <h2>Testing</h2>
+        </section>
+        <section class="row-container">
+            <div class="row-70">
+                <h3>Guerilla Testing</h3>
+                <p>The <span class="quote">first prototype</span> was tested with Guerrilla Testing. For this purpose,
+                    the
+                    interface
+                    was laid out in the common area of the Netlight company and kept under observation. People were not
+                    actively made aware of the board or persuaded to interact.</p>
+                <p>Some people interacted freely with the Interface and activated it with their foot without
+                    instruction.
+                    Some people were afraid of damaging the interface. This led to a further modification of the
+                    interface.
+                </p>
+                <p>Further guerrilla tests showed that the plate was partially not triggered because the non-clickable
+                    edge
+                    was in the way. This suggested that the plate was not big enough. Some users also pointed out that a
+                    hint on which interaction to perform would be helpful for them.</p>
+                <p>The guerilla tests have also shown that people present did not immediately take notice
+                    of the printing plates, but only on the third or fourth occasion. One reason for this could be that
+                    people in this specific work environment have little need to look down when communicating or
+                    carrying
+                    out their activities, but instead direct their gaze to coworkers or workstations. However, in the
+                    previously described meetup situation that is the focus of this paper, it is precisely this
+                    placement on
+                    the floor that turns into an advantage: presumably, a characteristic of our user group is a limited
+                    or
+                    differently oriented radius of vision because they are sitting, reading informational materials from
+                    the
+                    event or on their smartphones, or looking at the premises. This is in contrast to those who have
+                    already
+                    made a social connection and are communicating with other participants.</p>
+                <p>Guerilla Testing with the <span class="quote">second prototype</span> showed that this prototype also
+                    had
+                    the problem that
+                    the pressure area of the plate is somewhat too small when users want to place their whole foot on it
+                    to
+                    trigger it. The ambient light proved to be effective and increased the perceptibility of the LEDs.
+                    It
+                    also became clear that users are still afraid of damaging the plate when they step on it.</p>
+            </div>
+            <div class="row-30">
+                <img src="images/pressureplates/pressureplate-first-prototype-guerilla-testing.jpeg"
+                     alt="Diagram of the third iteration"
+                     onclick="toggleModal(this)" class="has-modal"/>
+                <p class="secondary-text">The prototype was later set up so that the wiring could be hidden under a
+                    floor flap containing the power outlets.</p>
+            </div>
+        </section>
+        <section>
+            <section class="row-container">
+                <div class="row-70">
+                    <h3>User testing</h3>
+                    <p>After the first of the following user tests, the plates were slightly adjusted to solve
+                        mechanical
+                        difficulties. During the usage study, it was found that the plate surface on which users applied
+                        pressure with their foot could slip inside the surrounding frame and unintentionally close the
+                        circuit by touching the frame. This regularly triggered a pressure signal that was not caused by
+                        the
+                        users. The edge of the pressure area was therefore insulated with non-conductive adhesive
+                        tape.</p>
+                    <p>Due to the Corona measures, no qualitative user tests could be carried out in real Meetup
+                        situations.
+                        Therefore, qualitative single and double tests were used, which were feasible according to the
+                        measures. At the beginning, before the exploration with the prototypes, a questionnaire was
+                        filled out together with the participants.
+                        Afterwards, the users were allowed to explore the panels without further instruction.</p>
+                </div>
+                <div class="row-30">
+                    <img src="images/pressureplates/pressureplates-question-answers.png"
+                         alt="Table with output from the questionaires."
+                         onclick="toggleModal(this)" class="has-modal"/>
+                    <p class="secondary-text">The median values of the completed questionnaires as part of the user
+                        testing. (1 = very low, 20 = very high)</p>
+                </div>
+            </section>
+            <section class="research-finding">
+                <div class="research-finding-label label-large full-padding">Needs further improvement</div>
+                <div>
+                    <ul>
+                        <li>Clear icons or texts must prompt interaction</li>
+                        <li>Mechanics must be as flawless as possible to avoid confusion and frustration</li>
+                        <li>Dot display on top seems to distract from ambient light. Ambient light too unobtrusive.
+                            Light on top (covered with frosted glass) could be a solution.
+                        </li>
+                        <li>Playing together is more fun, possibly construct game with multiple players per single
+                            board.
+                        </li>
+                        <li>Interface can be difficult if not impossible to activate while sitting. People stand during
+                            use which makes use in sitting areas in front of sofas etc. not possible.
+                        </li>
+                        <li>Large size sometimes causes people to stand with both feet on the plate and remain
+                            standing.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="research-finding">
+                <div class="research-finding-label label-large full-padding">Positive findings</div>
+                <div>
+                    <ul>
+                        <li>Concept of a flat object lying on the ground that offers interaction is known.</li>
+                        <li>Interaction by foot is clear</li>
+                        <li>Interface seems suitable as icebreaker for contacts with other people.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="row-container">
+                <div class="row-50">
+                    <img src="images/pressureplates/pressureplate-third-prototype-icons.png"
+                         alt="Two metal plates with different icons on translucent foil."
+                         onclick="toggleModal(this)" class="has-modal"/>
+                    <p class="secondary-text">Different icon variants used in the tests. The glowing circles at the top
+                        were
+                        added during testing to allow for in-game scoring.</p>
+                </div>
+                <div class="row-50">
+                    <img src="images/pressureplates/pressureplate-position-example.jpg"
+                         alt="Comfy chairs with plates on the floor."
+                         onclick="toggleModal(this)" class="has-modal"/>
+                    <p class="secondary-text">The seating area with positioning of the plates for the usage studies. The
+                        letters mark the chairs on which the users sat. The visible wiring of the prototypes should be
+                        hidden as much as possible in a real meetup situation..</p>
+                </div>
+            </section>
+        </section>
+    </div>
+</section>
+
+<section class="project-block" id="futurePrototype">
+    <div class="limited-width">
+        <section>
+            <h3>Future protoypes</h3>
+            <p>Based on the results of the user tests, the following variants are proposed for further prototypes.
+                These should be tested in future real Meetup situations, when this is possible again.</p>
+        </section>
+        <section class="row-container">
+            <div class="row-30 mobile-card">
+                <p>Smaller, no edge</p>
+                <p class="secondary-text">The interface could be made smaller and without an edge. This could be made
+                    possible by placing the LEDs under the base plate. This should make it easier to activate and enable
+                    operation while sitting.</p>
+                <img src="images/pressureplates/pressureplate-icon-alternatives.jpg"
+                     alt="Alternative icon ideas."
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </div>
+            <div class="row-30 mobile-card">
+                <p>Same size, no edge</p>
+                <p class="secondary-text">If the size of the interface is maintained, a separate circuit could be closed
+                    for each corner of the interface in a borderless implementation, through which the board offers
+                    multiple input possibilities. This would allow a single plate to be used by multiple players
+                    simultaneously. However, this could lead to the plate no longer behaving as an unobtrusive
+                    interface.</p>
+                <img src="images/pressureplates/pressureplate-future-no-border.jpg"
+                     alt="Scribbles for an alternative building plan of the plate."
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </div>
+            <div class="row-30 mobile-card">
+                <p>Ergonomic form</p>
+                <p class="secondary-text">The interface could be designed in a (half) shoe shape similar to a foot
+                    pedal, as they are common in cars or for drums and sewing machines.</p>
+                <img src="images/pressureplates/pressureplate-future-organic.jpg"
+                     alt="Scribbles for an alternative building plan of the plate."
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </div>
+        </section>
+    </div>
+</section>
+
+<div id="imgModal" class="closed">
+    <span class="material-icons icon-button" onclick="toggleModal()">close</span>
+    <img src="" alt="" class="full-padding"/>
+</div>
+
+<footer class="label-large">
+    <a href="https://www.linkedin.com/in/franziska-haaf/" target="_blank">LinkedIn</a>
+    <a href="https://www.xing.com/profile/Franziska_Haaf2" target="_blank">Xing</a>
+</footer>
+</body>
+
+</html>
