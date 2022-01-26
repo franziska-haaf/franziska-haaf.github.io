@@ -25,6 +25,16 @@ function toggleModal(img) {
     }
 }
 
+/* Close Image modal by using ESC aswell */
+document.addEventListener('keydown', closeModalWithESC);
+
+function closeModalWithESC(e) {
+    let modal = document.getElementById('imgModal')
+    if (e.keyCode == 27 && !modal.classList.contains('closed')) {
+        modal.classList.add('closed')
+    }
+}
+
 /* Show active anchor on the onPageNavigation */
 let sections;
 let navLi;
