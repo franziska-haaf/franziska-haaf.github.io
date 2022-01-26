@@ -1,0 +1,12 @@
+h2 a{
+    text-decoration: underline;
+    color: #017afe;
+}
+
+main{
+    height: calc(100vh - 112px);
+}
+
+img{
+    margin-bottom: 16px;
+}
