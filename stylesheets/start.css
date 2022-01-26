@@ -63,6 +63,13 @@
     }
 }
 
+@media print, screen and (min-width: 768px) and (max-width: 1040px) {
+    .project-link{
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+}
+
 /* Desktop & Tablet */
 @media only screen and (min-width: 768px) {
     .project-link {
