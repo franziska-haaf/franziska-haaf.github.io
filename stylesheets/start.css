@@ -26,6 +26,10 @@
     background-image: url("../images/adtonic/tonic-neon.png");
 }
 
+#projectTonicPubs .project-link-img {
+    background-image: url("../images/adtonic/tonic-neon.png");
+}
+
 #projectHealthapp .project-link-img {
     background-image: url("../images/healthapp/healthapp.png");
     background-position: left;
