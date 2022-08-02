@@ -3,9 +3,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="author" content="Franziska Haaf">
-    <title>Franziska Haaf, UX Design</title>
+    <title>Figma at TI</title>
     <link rel="stylesheet" href="stylesheets/style.css">
-    <link rel="stylesheet" href="stylesheets/404.css">
+    <link rel="stylesheet" href="stylesheets/project.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="javascripts/methods.js"></script>
 </head>
@@ -16,9 +16,9 @@
         <a href="/">Start</a>
         <a href="/resume.html">Resume</a>
         <a href="/tracking-for-dummies.html">Tracking for Dummies</a>
-         <a href="/tonic.html">TONIC.</a>
+        <a href="/tonic.html">TONIC.</a>
         <a href="/healthapp.html">Healthapp</a>
-        <a href="/pressureplates.html">Pressure plates</a>
+        <a href="/pressureplates.html">Metal plates</a>
         <a href="/figma.html" class="active">Figma at TI</a>
     </span>
     <a href="javascript:void(0);" class="mobile-menu-icon" onclick="toggleMobileNav()">
@@ -26,19 +26,121 @@
     </a>
 </nav>
 
+<div id="onPageNavigation">
+    <ul>
+        <!--todo fill your navigation-->
+        <li class="label-small">Contents</li>
+        <li><a href="#someWhere">someWhere</a></li>
+    </ul>
+</div>
+
 <div id="backToTopButton" class="hidden">
     <span class="material-icons icon-button" onclick="location.href='#'">arrow_upward</span>
 </div>
 
-<main class="limited-width centered-text full-padding">
-    Stuff will follow about the figma structure at TI
+<div class="teaser-image">
+    <img src="" alt="Teaser image for project xyz"/>
+    <!--todo set teaser img-->
+</div>
+<section class="project-block project-header">
+    <div class="limited-width">
+        <section>
+            <h1>Figma at TI</h1> <!--todo set name-->
+            <p class="body-large quote">Lorem ipsum</p> <!--todo set description-->
+        </section>
+        <section>
+            <h2>Problem</h2>
+            <p>My problem</p> <!--todo add problem-->
+        </section>
+    </div>
+</section>
+
+<div class="project-meta-list colored-bg">
+    <div class="project-meta">
+
+        <h3>Mission</h3>
+        <p>Mission</p> <!--todo Mission-->
+    </div>
+    <div class="project-meta">
+        <h3>Role</h3>
+        <p>Senior UX Designer</p>  <!--todo Role-->
+    </div>
+    <div class="project-meta">
+        <h3>Timeline</h3>
+        <p>from to</p>  <!--todo timeline-->
+    </div>
+    <div class="project-meta">
+        <h3>Methods</h3>
+        <p>Interviews | Personas | Web analysis | Card sorting | User Journey Map | Wireframes | Prototyping | Designs |
+            Collaborative sketching | Heuristic evaluation | Usability testing</p>  <!--todo check/add and remove methods-->
+    </div>
+    <div class="project-meta">
+        <h3>Tools</h3>
+        <p>Figma | Adobe AfterEffects | Dropbox Paper | Jira | Confluence | Blender | Zoom | Procreate</p><!--todo check/add and remove tools-->
+    </div>
+</div>
+
+<section class="project-block">
+    <div class="limited-width">
+        <section>
+            <h2>About project</h2>
+            <p>About</p><!--todo about-->
+        </section>
+        <section> <!--todo add a cool graphic if you want to-->
+            <div>
+                <img src=""
+                     alt="Graphic" onclick="toggleModal(this)"
+                     class="has-modal"/>
+            </div>
+            <p class="secondary-text">Description of the image</p>
+        </section>
+    </div>
+</section>
+
+<section class="project-block colored-bg" id="someWhere"> <!--todo colored-bg yes/no-->
+    <div class="limited-width">
+        <section>
+            <h2>H2</h2>
+            <p>Some text</p>
+        </section>
+        <section>
+            <h3>H3</h3>
+            <p>More text</p>
+        </section>
+        <section class="row-container">
+            <div class="row-70"><h3>A block with 2 rows</h3>
+                <p>With text</p>
+            </div>
+            <div class="row-30">
+                <img src="" alt="Img"
+                     onclick="toggleModal(this)" class="has-modal"/>
+                <p class="secondary-text">Description</p>
+            </div>
+        </section>
+        <section>
+            <section>
+                <h3>A block with only 1 row</h3>
+                <p>text</p>
+            </section>
+            <section>
+                <img src="" alt="img"
+                     onclick="toggleModal(this)" class="has-modal"/>
+            </section>
+        </section>
+    </div>
+</section>
 
 
-</main>
+<div id="imgModal" class="closed">
+    <span class="material-icons icon-button" onclick="toggleModal()">close</span>
+    <img src="" alt="" class="full-padding"/>
+</div>
+
 <footer class="label-large">
     <a href="https://www.figma.com/@franni" target="_blank">Figma</a>
     <a href="https://www.linkedin.com/in/franziska-haaf/" target="_blank">LinkedIn</a>
     <a href="https://www.xing.com/profile/Franziska_Haaf2" target="_blank">Xing</a>
 </footer>
 </body>
+
 </html>
