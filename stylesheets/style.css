@@ -98,6 +98,11 @@ nav a:hover, footer a:hover {
     text-decoration: underline;
 }
 
+nav .divider{
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ffffff;
+}
+
 nav a.active {
     text-decoration: underline;
 }
@@ -151,6 +156,14 @@ footer a {
 
     nav .mobile-menu-icon {
         display: none;
+    }
+
+    nav .divider{
+        margin-bottom: 0;
+        padding-right: 8px;
+        margin-right: 8px;
+        border-bottom: none;
+        border-right: 1px solid #ffffff;
     }
 
     .row-container {
