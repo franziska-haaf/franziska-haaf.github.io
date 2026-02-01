@@ -1,2 +1,2 @@
 # franziska-haaf.github.io
-My github pages website
+Franni card art website - work in progress
