@@ -1,0 +1,239 @@
+:root {
+  --font-size-normal: 0.875rem;
+  --font-size-header: 1.875rem;
+  --color-primary: #928954;
+  --color-primary-dark: #745F00;
+  --color-primary-accent: #E5E2D6;
+}
+
+* {
+  color: #000;
+  font-family: Inter;
+  font-size: var(--font-size-normal);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #000;
+  font-family: Inter;
+  font-size: var(--font-size-normal);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h2 {
+  color: #000;
+  font-family: Inter;
+  font-size: var(--font-size-header);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.container-horizontal {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+a.link {
+  display: flex;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+
+  color: var(--color-primary-dark);
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.button-secondary {
+  display: flex;
+  height: 2.5rem;
+  padding: 0 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  flex: 1 0 0;
+  background: #fff;
+
+  color: var(--color-primary-dark);
+  font-family: Inter;
+  font-size: var(--font-size-normal);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  border-radius: 0.25rem;
+  border: 1px solid var(--color-primary-dark);
+}
+
+/**
+  * Header Styles
+  */
+#logoHeader {
+  height: 112px;
+}
+
+header {
+  display: flex;
+  padding: 1rem 1rem 0.5rem 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  align-self: stretch;
+
+  border-radius: 0 0 1rem 1rem;
+  background: var(--color-primary-accent);
+}
+
+/**
+  * Main Styles
+  */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  align-self: stretch;
+
+}
+
+main section {
+  display: flex;
+  padding: 0 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+
+  gap: 1rem;
+}
+
+main>* {
+  max-width: 64rem;
+  padding: 0 1rem;
+}
+
+img.progressImage {
+  width: 100%;
+  border-radius: 0.5rem;
+  aspect-ratio: 9/16;
+}
+
+.image-collection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+.divider {
+  display: flex;
+  height: 2rem;
+  padding: 0 1rem;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
+.line {
+  display: flex;
+  height: 0.0625rem;
+  padding: 0 1rem;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 0;
+  background: var(--color-primary);
+}
+
+
+/**
+  * Footer Styles
+  */
+footer {
+  display: flex;
+  padding: 1rem 1rem 0.5rem 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  align-self: stretch;
+
+  border-radius: 1rem 1rem 0 0;
+  background: var(--color-primary-accent);
+}
+
+@media screen and (min-width: 833px) {
+  .image-collection {
+    display: inline-grid;
+    row-gap: 1rem;
+    column-gap: 16px;
+    align-self: stretch;
+    grid-template-rows: repeat(2, fit-content(100%));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+  }
+
+  .image-collection {
+    display: inline-grid;
+    row-gap: 1rem;
+    column-gap: 16px;
+    align-self: stretch;
+    grid-template-rows: repeat(1, fit-content(100%));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  main > * {
+    margin: auto;
+    width: 50%;
+  }
+}
