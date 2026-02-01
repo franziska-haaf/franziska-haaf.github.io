@@ -1,4 +1,5 @@
 :root {
+  --font-size-small: 0.75rem;
   --font-size-normal: 1rem;
   --font-size-header: 1.875rem;
 
@@ -146,10 +147,17 @@ header .logo {
 }
 
 
-.externalLinks {
+.externalLinks,
+.legalLinks {
   display: flex;
   align-items: flex-start;
   gap: var(--spacing-medium);
+}
+
+.legalLinks a {
+  font-size: var(--font-size-small);
+  color: var(--font-color-medium-emphasis);
+  text-decoration: none;
 }
 
 /**
@@ -199,23 +207,23 @@ main>* {
 }
 
 .image-collection {
- display: flex;
-align-items: flex-start;
-align-content: flex-start;
-gap: 1rem;
-align-self: stretch;
-flex-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+  flex-wrap: wrap;
 }
 
-.image-collection img{
-height: auto;
-min-width: 12.5rem;
-max-width: 25rem;
+.image-collection img {
+  height: auto;
+  min-width: 13rem;
+  max-width: 16rem;
 
-flex: 1 0 0;
-aspect-ratio: 9/16;
+  flex: 1 0 0;
+  aspect-ratio: 9/16;
 
-   border-radius: var(--border-radius-small);
+  border-radius: var(--border-radius-small);
   aspect-ratio: 9/16;
 }
 
@@ -238,7 +246,7 @@ aspect-ratio: 9/16;
   background: var(--color-primary);
 }
 
-div a#backToTopButton{
+div a#backToTopButton {
   width: auto;
 }
 
@@ -258,7 +266,13 @@ footer {
   background: var(--color-primary-accent);
 }
 
-footer .logo{
+footer #footerLogoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+footer .logo {
   width: 4rem;
   height: auto;
 }
@@ -271,13 +285,27 @@ footer .logo{
   border-radius: var(--border-radius-medium)
 }
 
+#aboutmeSection .column-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+#aboutMeSection .description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+
 /**
   * Medium Screen Styles
   */
 @media screen and (min-width: 833px) {
-  #aboutMeSection{
-    
-  }
+  #aboutMeSection {}
 
 }
 
@@ -293,7 +321,8 @@ footer .logo{
     align-self: stretch;
   }
 
-  #onPageNav, .divider{
+  #onPageNav,
+  .divider {
     width: 100%;
   }
 
@@ -301,22 +330,11 @@ footer .logo{
     margin: auto;
   }
 
-  #aboutmeSection .column-two{
-   display: flex;
-align-items: flex-start;
-gap: 1rem;
-align-self: stretch;
-  }
-
-  #aboutMeSection .description{
-    display: flex;
-flex-direction: column;
-align-items: center;
-gap: 1rem;
-flex: 1 0 0;
+  #aboutMeSection .column-two {
+   flex-direction: row;
   }
 
   #aboutMeSection .aboutMeImage {
-    width: 30%;
+    width: 40%;
   }
 }
