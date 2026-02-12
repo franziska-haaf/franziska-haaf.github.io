@@ -2,10 +2,12 @@
   --font-size-small: 0.75rem;
   --font-size-normal: 1rem;
   --font-size-header: 1.875rem;
+  --font-family: Inter, sans-serif;
 
   --font-weight-normal: 400;
   --font-weight-bold: 600;
 
+  --color-background: #ffffff;
   --color-primary: #928954;
   --color-primary-dark: #745F00;
   --color-primary-accent: #E5E2D6;
@@ -21,11 +23,15 @@
   --font-color-medium-emphasis: rgba(46, 46, 32, 0.75);
   --font-color-default: rgb(46, 46, 32);
 
+  --size-48: 3rem;
+  --spacing-16: 1rem;
+  --spacing-8: 0.5rem;
+
   --max-width-content: 80ch;
 }
 
 * {
-  font-family: Inter;
+  font-family: var(--font-family);
   font-size: var(--font-size-normal);
   font-style: normal;
   font-weight: var(--font-weight-normal);
@@ -40,6 +46,13 @@ html {
 body {
   padding: 0;
   margin: 0;
+  background-color: var(--color-background);
+  color: var(--font-color-default);
+}
+
+strong{
+  font-weight: var(--font-weight-bold);
+  color: var(--font-color-default);
 }
 
 p {
@@ -78,18 +91,22 @@ h6 {
   color: var(--font-color-default);
 }
 
+a{
+  line-height: 1;
+  text-align: center;
+}
+
 a.link {
   display: flex;
-  height: 2.5rem;
+  height: var(--size-48);
   justify-content: center;
   align-items: center;
-  gap: 0.625rem;
+  gap: var(--spacing-8);
 
   color: var(--color-primary-dark);
-  font-size: 0.875rem;
+  font-size: var(--font-size-small);
   font-style: normal;
   font-weight: var(--font-weight-bold);
-  line-height: normal;
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-skip-ink: auto;
@@ -104,21 +121,19 @@ a.link:hover {
 
 .button-secondary {
   display: flex;
-  height: 2.5rem;
+ height: var(--size-48);
   padding: 0 1rem;
   justify-content: center;
   align-items: center;
-  gap: 0.625rem;
+  gap: var(--spacing-8);
   flex: 1 0 0;
-  background: #fff;
+  background: var(--color-background);
   text-decoration: none;
 
   color: var(--color-primary-dark);
-  font-family: Inter;
   font-size: var(--font-size-normal);
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: var(--font-weight-bold);
 
   border-radius: var(--border-radius-small);
   border: 1px solid var(--color-primary);
@@ -178,6 +193,7 @@ header .logo {
   align-items: flex-start;
   gap: 0.5rem;
   align-self: stretch;
+  flex-wrap: wrap;
 }
 
 #onPageNav .button-secondary {
@@ -221,6 +237,7 @@ main>* {
   gap: 1rem;
   align-self: stretch;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .image-collection img {
@@ -312,7 +329,9 @@ footer .logo {
   * Medium Screen Styles
   */
 @media screen and (min-width: 833px) {
-  #aboutMeSection {}
+  main>* {
+    margin: auto;
+  }
 }
 
 /**
@@ -330,10 +349,6 @@ footer .logo {
   #onPageNav,
   .divider {
     width: 100%;
-  }
-
-  main>* {
-    margin: auto;
   }
 
   #aboutMeSection .column-two {
