@@ -307,7 +307,7 @@ footer .logo {
   aspect-ratio: 3/4;
   height: auto;
   width: 50%;
-  border-radius: var(--border-radius-medium)
+  border-radius: var(--border-radius-small)
 }
 
 #aboutmeSection .column-two {
