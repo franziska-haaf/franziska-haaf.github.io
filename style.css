@@ -332,6 +332,9 @@ footer .logo {
   height: auto;
 }
 
+footer a.link{
+    font-size: var(--font-size-small);
+}
 
 #aboutMeSection .aboutMeImage {
   aspect-ratio: 3/4;
