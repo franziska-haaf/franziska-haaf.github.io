@@ -119,6 +119,10 @@ a.link:hover {
   color: var(--font-color-default);
 }
 
+a.textlink{
+  color: var(--color-primary-dark);
+}
+
 .button-secondary {
   display: flex;
  height: var(--size-48);
@@ -324,6 +328,29 @@ footer .logo {
   align-self: stretch;
 }
 
+/*
+* Commission Info images
+*/
+#commissionInfoImages{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: var(--spacing-medium);
+align-self: stretch;
+}
+
+
+#commissionInfoImages img{
+  min-width: 8.75rem;
+  width: 20%;
+}
+
+#commissionInfoImages .commissionInfoImage {
+  display: flex;
+align-items: flex-start;
+gap: var(--spacing-small);
+align-self: stretch;
+}
 
 /**
   * Medium Screen Styles
