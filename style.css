@@ -402,7 +402,8 @@ figcaption {
   margin: 0 auto 32px;
 }
 
-.card-alters-back-to-top {
+.card-alters-back-to-top,
+.portfolio-back-to-top {
   display: flex;
   justify-content: center;
   width: 100%;
