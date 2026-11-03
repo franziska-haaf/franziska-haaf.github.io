@@ -566,7 +566,7 @@ figcaption {
 
 @media (max-width: 620px) {
   .site-header {
-    padding: 24px 16px 16px;
+    padding: max(64px, calc(env(safe-area-inset-top) + 24px)) 16px 16px;
   }
 
   .brand-description {
