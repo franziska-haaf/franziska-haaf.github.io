@@ -401,6 +401,12 @@ figcaption {
   margin: 0 auto 32px;
 }
 
+.card-alters-back-to-top {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
