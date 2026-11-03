@@ -258,6 +258,11 @@ li {
   min-width: 0;
 }
 
+.price-card--image-box {
+  gap: 16px 8px;
+  column-gap: 8px;
+}
+
 .price-images {
   display: flex;
   flex: 0 0 auto;
