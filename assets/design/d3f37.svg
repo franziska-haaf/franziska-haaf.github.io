@@ -1,0 +1,17 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="No AI">
+<g clip-path="url(#clip0_0_576)">
+<g id="AI">
+<path d="M16.8248 39.9091H11.8816L19.4135 18.0909H25.3581L32.8794 39.9091H27.9363L22.4711 23.0767H22.3006L16.8248 39.9091ZM16.5158 31.3331H28.1919V34.9339H16.5158V31.3331Z" fill="black"/>
+<path d="M40.1184 18.0909V39.9091H35.5055V18.0909H40.1184Z" fill="black"/>
+</g>
+<path id="Line 2 (Stroke)" d="M48.4141 45.5859L45.5859 48.4141L7.58594 10.4141L10.4141 7.58594L48.4141 45.5859Z" fill="#8F6250"/>
+<path id="Ellipse 1 (Stroke)" d="M52 28C52 14.7452 41.2548 4 28 4C14.7452 4 4 14.7452 4 28C4 41.2548 14.7452 52 28 52V56C12.536 56 0 43.464 0 28C0 12.536 12.536 0 28 0C43.464 0 56 12.536 56 28C56 43.464 43.464 56 28 56V52C41.2548 52 52 41.2548 52 28Z" fill="#8F6250"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_576">
+<rect width="56" height="56" fill="white"/>
+</clipPath>
+</defs>
+</svg>

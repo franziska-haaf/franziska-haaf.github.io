@@ -1,181 +1,218 @@
-<html lang="english">
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="author" content="Franziska Haaf">
-
-    <meta property="og:image" content="assets/social-sharing-image.png" />
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://franni.art">
-    <meta property="og:title" content="Franni Card Art">
-    <meta property="og:description" content="High quality card alters and TCG related art.">
-
-    <title>Franni Card Art</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <script type="text/javascript" src="./methods.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Franziska Haaf">
+  <meta property="og:image" content="assets/social-sharing-image.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://franni.art">
+  <meta property="og:title" content="Franni — Fantasy Realism Oil Painter">
+  <meta property="og:description" content="One-of-a-kind fantasy realism card alters and traditional oil paintings.">
+  <title>Franni — Fantasy Realism Oil Painter</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="./methods.js" defer></script>
 </head>
+<body id="top">
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Franni, home">
+      <span class="brand-name">Franni</span>
+      <span class="brand-description"><strong>Franziska Haaf,</strong> Fantasy Realism Oil Painter from Germany</span>
+    </a>
+    <nav class="social-icons" aria-label="Social links">
+      <a href="https://shop.franni.art" target="_blank" rel="noreferrer" aria-label="Online shop">
+        <img src="./assets/design/1a139.svg" alt="">
+      </a>
+      <a href="https://www.instagram.com/franni.card.art/" target="_blank" rel="noreferrer" aria-label="Instagram">
+        <img src="./assets/design/2616a.svg" alt="">
+      </a>
+      <a href="https://www.tiktok.com/@franni.card.art" target="_blank" rel="noreferrer" aria-label="TikTok">
+        <img src="./assets/design/4f472.svg" alt="">
+      </a>
+      <a href="https://api.whatsapp.com/message/77I33PAIKLDVI1?autoload=1&amp;app_absent=0" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+        <img src="./assets/design/4d1f9.svg" alt="">
+      </a>
+      <a href="mailto:franni.card.art@mailbox.org" aria-label="Email">
+        <img src="./assets/design/1c9d4.svg" alt="">
+      </a>
+    </nav>
+  </header>
 
-<body>
-    <header id="header">
-        <div>
-            <img src="./assets/franni.card.art-round.webp" alt="Franni Card Art Logo" class="logo">
+  <nav class="tab-list" role="tablist" aria-label="Main sections">
+    <button class="tab" id="tab-card-alters" role="tab" aria-selected="true" aria-controls="card-alters" tabindex="0" data-tab="card-alters">Card alters</button>
+    <button class="tab" id="tab-portfolio" role="tab" aria-selected="false" aria-controls="portfolio" tabindex="-1" data-tab="portfolio">Portfolio</button>
+    <button class="tab" id="tab-about" role="tab" aria-selected="false" aria-controls="about" tabindex="-1" data-tab="about">About me</button>
+  </nav>
+
+  <main>
+    <section class="tab-panel" id="card-alters" role="tabpanel" aria-labelledby="tab-card-alters">
+      <h1>Commissions</h1>
+
+      <section class="content-section facts-section" aria-labelledby="facts-title">
+        <h2 id="facts-title">Some facts</h2>
+        <div class="facts">
+          <img class="no-ai" src="./assets/design/d3f37.svg" alt="No AI">
+          <div>
+            <p>I’m a traditional oil painter who creates one-of-a-kind fantasy-realism cards. I don’t use AI to alter my art or create references, and I never re-paint the same artwork. My cards are made to play with or collect, and commissioned cards are never printed as proxies.<br>So they are purely yours.</p>
+            <ul>
+              <li>Foil and non-foil cards are possible</li>
+              <li>No border-extension (expanding the original artwork)</li>
+            </ul>
+          </div>
         </div>
-        <hgroup>
-            <h1>Franni Card Art</h1>
-            <p>High quality card alters and TCG related art.</p>
-        </hgroup>
-        <div>
-            <a href="https://shop.franni.art" target="_blank" class="button-white">Visit my shop</a>
-        </div>
-        <span class="externalLinks">
-            <a href="https://www.instagram.com/franni.card.art/" target="_blank" class="link">Instagram</a>
-            <a href="https://www.youtube.com/@franniCardArt" target="_blank" class="link">YouTube</a>
-            <a href="https://www.tiktok.com/@franni.card.art" target="_blank" class="link">TikTok</a>
-            <a href="https://api.whatsapp.com/message/77I33PAIKLDVI1?autoload=1&app_absent=0" target="_blank"
-                class="link">WhatsApp</a>
-        </span>
-    </header>
+      </section>
 
-    <main>
-        <nav id="onPageNav">
-            <a href="#whatIDoSection" class="button-secondary">What I do</a>
-            <a href="#commissionsSection" class="button-secondary">Commissions</a>
-            <a href="#aboutMeSection" class="button-secondary">About me</a>
-        </nav>
-
-        <section id="whatIDoSection">
-            <h2>What I do</h2>
-            <div>
-                <p>I am a traditional artist mainly painting with oil paints.</p>
-                <p>I make card alters, proxy cards, tokens and general <abbr>TCG</abbr> (trading card game) related
-                    artworks.</p>
-            </div>
-            <div>
-                <h3>Card Altering</h3>
-                <p>Card altering basically means, that someone artistically modifies a Trading Card Game
-                    (TCG) card using paint, markers, or other.</p>
-                <p>I only paint on <strong>original cards</strong>. Before I paint on a card, I prime the card to make
-                    sure the paint sticks
-                    to it and also to keep the card material safe from solvents in the paints.</p>
-                <p>Every card is <strong>unique and an original</strong>. A certificate is included. Once a motive is
-                    painted, I won't paint the same motive again.</p>
-                <p>Here are some progress pictures showing different stages of cards being painted:</p>
-                <span class="image-collection">
-                    <img src="./assets/progress-images/angel-progress-2.webp"
-                        alt="A trading card is placed on a light-textured surface. The artwork shows a line-drawn figure with large, sweeping wings extending outward. The lower portion includes a hand holding what appears to be a staff or elongated object. The piece is in an early painted stage, with light washes of color and visible sketch lines."
-                        class="progressImage">
-                    <img src="./assets/progress-images/angel-progress.webp"
-                        alt="A wooden tabletop easel holds a small trading card on a clip. The card is being modified with painted artwork showing soft, light-toned wings and a partially rendered figure. To the left of the easel is a painter’s palette covered in mixed oil paints—mostly neutral tones like beige, browns, whites, and touches of bright colors such as red and blue. A thin paintbrush rests horizontally along the bottom edge of the setup."
-                        class="progressImage">
-                    <img src="./assets/progress-images/vampire-progress-2.webp"
-                        alt="A hand holds a fine paintbrush and paints on a trading card attached to a wooden easel. The artwork on the card depicts a stylized face with pale skin, vivid red lips, and intense red eyes. The artist is applying detail to the lips. To the left is a palette covered in mixed oil paints in various neutral and vivid hues."
-                        class="progressImage">
-                    <img src="./assets/progress-images/vampire-progress.webp"
-                        alt="A trading card lies on a flat surface while someone paints over it with a small brush. The card has a rough sketch of a face and hand drawn in dark lines over a lightly colored background, suggesting the early stages of a character illustration. The text area of the card remains partially visible beneath a layer of paint."
-                        class="progressImage">
-
-                </span>
-            </div>
-        </section>
-
-        <div class="divider">
-            <div class="line"> </div>
-        </div>
-
-        <section id="commissionsSection">
-            <h2>Commissions</h2>
-            <p>I do take commissions. Prices depend on the motive. E.g. if it’s a photo of your pet or a movie character
-                or if it’s a custom motive I have to create a design for. If you want to know more - don’t hesitate to
-                contact me.</p>
-            <div>
-                <h3>Commissions of trading cards</h3>
-                <p>I do not take on commissions for border extensions of the original card artwork.</p>
-                <p>The original card to be altered has to be send to me. Different alterations are possible, see
-                    graphics below:</p>
-                <div id="commissionInfoImages">
-                    <div class="commissionInfoImage">
-                        <img src="assets/altering/card_only-imagebox.webp"
-                            alt="A simple b/w line illustration of a TCG card where the image box part is colored green." />
-                        <p>Only repaint of the image box</p>
-                    </div>
-                    <div class="commissionInfoImage">
-                        <img src="assets/altering/card_with-textbox.webp"
-                            alt="A simple b/w lineillustration of a TCG card where the whole card is green but all text- and info parts." />
-                        <p>Full card: all information stays visible.</p>
-                    </div>
-                    <div class="commissionInfoImage">
-                        <img src="assets/altering/card_only-essential-information.webp"
-                            alt="A simple b/w lineillustration of a TCG card where the whole card is green but title and cost." />
-                        <p>Full card: only most essential information stays visible.</p>
-                    </div>
+      <section class="content-section" aria-labelledby="prices-title">
+        <h2 id="prices-title">Prices</h2>
+        <div class="price-grid">
+          <article class="price-card">
+            <div class="price-images">
+              <img class="card-diagram" src="./assets/design/2fd84.svg" alt="Diagram showing only the card image box repainted">
+              <figure>
+                <div class="example-image example-image-box">
+                  <img src="./assets/design/commission-example-image-box.png" alt="Painted cat card example">
                 </div>
+                <figcaption>Example</figcaption>
+              </figure>
             </div>
-            <div>
-                <h3>Custom oil paintings</h3>
-                <p>I also do custom oil paintings of all sizes. If you want to know more about that please reach out to
-                    me.</p>
-                <p>You can contact me on my socials, <a
-                        href="https://api.whatsapp.com/message/77I33PAIKLDVI1?autoload=1&app_absent=0" target="_blank"
-                        class="textlink">WhatsApp</a>
-                    or via. my e-mail <a href="mailto:franni.card.art@mailbox.org"
-                        class="textlink">franni.card.art@mailbox.org</a>.</p>
+            <div class="price-copy">
+              <h3>Image box</h3>
+              <p>Only repaint of the image box</p>
+              <strong>60€</strong>
             </div>
-        </section>
+          </article>
 
-        <div class="divider">
-            <div class="line"> </div>
-        </div>
-
-        <section id="aboutMeSection">
-            <h2>About me</h2>
-            <div class="column-two">
-                <img src="./assets/about-me/franni-painting.webp"
-                    alt="A portrait of Franziska Haaf, also known as Franni Card Art. She has shoulder-length brown hair and is smiling warmly at the camera. She is wearing a light-colored top and is positioned against a neutral background."
-                    class="aboutMeImage">
-                <div class="description">
-                    <p>My name is Franziska, but everyone calls me Franni. I currently live in Cologne, Germany.</p>
-                    <p>I have a Master's degree in Computer Science, and my regular full-time job is related to that.
-                        However, art has always been my passion, and I have been making art ever since I was able to
-                        hold a pen.</p>
-                    <p>For many years, I painted traditional oil portraits of pets and humans. In 2024, I started
-                        playing TCGs and discovered that people were painting on the cards. So, over Christmas in 2024,
-                        I tried it myself and stuck with it! I started with border extensions on Lorcana cards, but now
-                        I prefer doing full custom artwork.</p>
+          <article class="price-card">
+            <div class="price-images">
+              <img class="card-diagram" src="./assets/design/13c06.svg" alt="Diagram showing a full card alter with the text box visible">
+              <figure>
+                <div class="example-image example-text-box">
+                  <img src="./assets/design/commission-example-text-box.png" alt="Full card alter example with the text box visible">
                 </div>
+                <figcaption>Example</figcaption>
+              </figure>
             </div>
-        </section>
+            <div class="price-copy">
+              <h3>Full card with text box visible</h3>
+              <p>All information stays visible.<br>Can contain overlapping elements.</p>
+              <strong>200€</strong>
+            </div>
+          </article>
 
-        <div>
-            <a href="#header" class="button-secondary" id="backToTopButton">Back to top ↑</a>
-        </div>
-    </main>
-    <footer>
-          <div class="bottom-margin small-screen">
-            <a href="https://shop.franni.art" target="_blank" class="button-white">Visit my shop</a>
-        </div>
-        <div id="footerLogoContainer">
-            <img src=" ./assets/franni.card.art-round.webp" alt="Franni Card Art Logo" class="logo">
-            <p>Franni Card Art</p>
-                        <a href="https://shop.franni.art" target="_blank" class="button-white medium-screen">Visit my shop</a>
+          <article class="price-card">
+            <div class="price-images">
+              <img class="card-diagram" src="./assets/design/41ef1.svg" alt="Diagram showing a full card alter with essential information visible">
+              <figure>
+                <div class="example-image example-full-card">
+                  <img src="./assets/design/commission-example-full-card.png" alt="Full painted card example">
+                </div>
+                <figcaption>Example</figcaption>
+              </figure>
+            </div>
+            <div class="price-copy">
+              <h3>Full card</h3>
+              <p>Only most essential information stays visible.</p>
+              <strong>240€</strong>
+            </div>
+          </article>
 
+          <article class="price-card">
+            <div class="price-images">
+              <img class="card-diagram" src="./assets/design/41ef1.svg" alt="Diagram showing a painted token with essential information visible">
+              <figure>
+                <div class="example-image example-token">
+                  <img src="./assets/design/commission-example-token.png" alt="Alla prima painted token example">
+                </div>
+                <figcaption>Example</figcaption>
+              </figure>
+            </div>
+            <div class="price-copy">
+              <h3><em>Alla prima</em> painted token</h3>
+              <p>The artwork is painted in one sitting and has a painterly look.<br>A reference in form of a photo or a screenshot needs to be provided.<br>No custom designs possible.</p>
+              <strong>60€</strong>
+            </div>
+          </article>
         </div>
-       
-        <span class="externalLinks">
-            <a href="https://www.instagram.com/franni.card.art/" target="_blank" class="link">Instagram</a>
-            <a href="https://www.youtube.com/@franniCardArt" target="_blank" class="link">YouTube</a>
-            <a href="https://www.tiktok.com/@franni.card.art" target="_blank" class="link">TikTok</a>
-            <a href="https://api.whatsapp.com/message/77I33PAIKLDVI1?autoload=1&app_absent=0" target="_blank"
-                class="link">WhatsApp</a>
-        </span>
-        <span class="legalLinks">
-            <a href="https://shop.franni.art/policies/contact-information" target="_blank" class="link">Contact
-                information</a>
-            <a href="https://shop.franni.art/policies/legal-notice" target="_blank" class="link">Legal notice</a>
-        </span>
-    </footer>
+      </section>
+
+      <section class="content-section commission-section" aria-labelledby="commission-title">
+        <h2 id="commission-title">Make a commission</h2>
+        <div class="narrow-copy">
+          <p>If you're interested in commissioning a custom alter, you can contact me on <a href="https://www.instagram.com/franni.card.art/" target="_blank" rel="noreferrer">Instagram</a>, <a href="https://www.tiktok.com/@franni.card.art" target="_blank" rel="noreferrer">TikTok</a>, <a href="https://api.whatsapp.com/message/77I33PAIKLDVI1?autoload=1&amp;app_absent=0" target="_blank" rel="noreferrer">WhatsApp</a>, or by e-mail at <a href="mailto:franni.card.art@mailbox.org">franni.card.art@mailbox.org</a>.</p>
+          <p>Please let me know what type of commission you're interested in (see prices), what references or ideas you have, and which country you're from.</p>
+          <p>I look forward to hearing your ideas.</p>
+        </div>
+      </section>
+    </section>
+
+    <section class="tab-panel" id="portfolio" role="tabpanel" aria-labelledby="tab-portfolio" hidden>
+      <h1>Portfolio</h1>
+      <section class="content-section intro-section">
+        <h2>Traditional work, tiny canvas</h2>
+        <div class="narrow-copy">
+          <p>I am a traditional artist mainly painting with oil paints. I make card alters, tokens and general TCG (trading card game) related artworks.</p>
+          <p>Every card is unique and an original. A certificate is included, and once a motif is painted, I won't paint the same motif again.</p>
+        </div>
+      </section>
+      <section class="content-section">
+        <h2>Works in progress</h2>
+        <div class="portfolio-grid">
+          <figure>
+            <img src="./assets/progress-images/angel-progress-2.webp" alt="Early painted stage of an angel artwork on a trading card">
+            <figcaption>Angel alter — underpainting</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/progress-images/angel-progress.webp" alt="Angel card alter on an easel beside an oil paint palette">
+            <figcaption>Angel alter — detail work</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/progress-images/vampire-progress-2.webp" alt="Painting fine details on a vampire card alter">
+            <figcaption>Vampire alter — final details</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/progress-images/vampire-progress.webp" alt="Early sketch stage of a vampire card alter">
+            <figcaption>Vampire alter — first sketch</figcaption>
+          </figure>
+        </div>
+      </section>
+    </section>
+
+    <section class="tab-panel" id="about" role="tabpanel" aria-labelledby="tab-about" hidden>
+      <h1>About me</h1>
+      <section class="content-section about-layout">
+        <img class="about-image" src="./assets/about-me/franni-painting.webp" alt="Franziska Haaf smiling at the camera">
+        <div class="about-copy">
+          <h2>Hi, I’m Franni</h2>
+          <p>My name is Franziska, but everyone calls me Franni. I currently live in Cologne, Germany.</p>
+          <p>I have a Master's degree in Computer Science, and my regular full-time job is related to that. However, art has always been my passion, and I have been making art ever since I was able to hold a pen.</p>
+          <p>For many years, I painted traditional oil portraits of pets and humans. In 2024, I started playing TCGs and discovered that people were painting on the cards. Over Christmas in 2024, I tried it myself and stuck with it. I started with border extensions on Lorcana cards, but now I prefer doing full custom artwork.</p>
+          <a class="outline-button" href="mailto:franni.card.art@mailbox.org">
+            <img src="./assets/design/1c9d4.svg" alt="">
+            Get in touch
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <a class="back-to-top outline-button" href="#top">
+      <img src="./assets/design/6de3f.svg" alt="">
+      Back to top
+    </a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="brand-name">Franni</span>
+      <p><strong>Franziska Haaf,</strong> Fantasy Realism Oil Painter from Germany</p>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="https://shop.franni.art" target="_blank" rel="noreferrer"><img src="./assets/design/1a139.svg" alt="">Online shop</a>
+        <a href="https://www.instagram.com/franni.card.art/" target="_blank" rel="noreferrer"><img src="./assets/design/9e417.svg" alt="">Instagram</a>
+        <a href="https://www.tiktok.com/@franni.card.art" target="_blank" rel="noreferrer"><img src="./assets/design/e2cc8.svg" alt="">TikTok</a>
+        <a href="https://api.whatsapp.com/message/77I33PAIKLDVI1?autoload=1&amp;app_absent=0" target="_blank" rel="noreferrer"><img src="./assets/design/45cc3.svg" alt="">WhatsApp</a>
+        <a href="mailto:franni.card.art@mailbox.org"><img src="./assets/design/28624.svg" alt="">E-mail</a>
+      </nav>
+    </div>
+  </footer>
 </body>
-
 </html>
