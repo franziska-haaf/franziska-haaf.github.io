@@ -374,6 +374,7 @@ figcaption {
 
 .back-to-top,
 .outline-button {
+  appearance: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -382,10 +383,13 @@ figcaption {
   padding: 0 16px;
   border: 1px solid var(--ink);
   background: var(--paper);
+  color: inherit;
+  cursor: pointer;
   font-family: var(--heading-font);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: .36px;
+  line-height: 1.2;
   text-decoration: none;
   text-transform: uppercase;
   transition: background .2s ease, color .2s ease;
