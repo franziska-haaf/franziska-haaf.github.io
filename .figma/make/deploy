@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+build_dir=".figma/make/static-build"
+rm -rf "$build_dir"
+mkdir -p "$build_dir"
+cp index.html contest-terms-and-conditions.html CNAME favicon.ico methods.js style.css "$build_dir/"
+cp -R assets "$build_dir/"
+
+[[ -d "$build_dir" ]] || {
+  echo "Expected build output at $build_dir" >&2
+  exit 1
+}
+
+figma make deploy --build-dir "$build_dir"
