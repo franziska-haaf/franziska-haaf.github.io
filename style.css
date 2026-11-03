@@ -407,6 +407,12 @@ figcaption {
   width: 100%;
 }
 
+.card-alters-back-to-top .back-to-top:hover {
+  border-color: var(--ink);
+  background: #f2f2f2;
+  color: var(--ink);
+}
+
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
