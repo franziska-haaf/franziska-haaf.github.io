@@ -388,8 +388,9 @@ figcaption {
 
 .back-to-top:hover,
 .outline-button:hover {
-  background: var(--ink);
-  color: var(--paper);
+  border-color: var(--ink);
+  background: #f2f2f2;
+  color: var(--ink);
 }
 
 .outline-button img {
@@ -405,12 +406,6 @@ figcaption {
   display: flex;
   justify-content: center;
   width: 100%;
-}
-
-.card-alters-back-to-top .back-to-top:hover {
-  border-color: var(--ink);
-  background: #f2f2f2;
-  color: var(--ink);
 }
 
 .portfolio-grid {
